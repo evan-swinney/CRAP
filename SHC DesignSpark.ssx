@@ -1,0 +1,96 @@
++V||1
+-V||1
+0V||1
+2-Block||2
+3 pole 1 throw switch||3
+3-Block||3
+3-Block side-by-side||3
+4 pin side-by-side||4
+4-Block||4
+5-OpAmp||5
+6 pin side-by-side||6
+6-Block||6
+6PIN||6
+7SEG1||10
+7SEG2||9
+8 Pin Molex||8
+8-Block||8
+9PIN||9
+9V||1
+10-Block||10
+12-Block||12
+15PIN||15
+16-Block||16
+20-Block||20
+24-Block||24
+25PIN||25
+28-Block||28
+37PIN||37
+64PIN||64
+96PIN||96
+A||3
+A1||0
+A2||0
+A3||0
+A4||0
+ANSI_A||0
+ANSI_B||0
+ANSI_C||0
+ANSI_D||0
+Antennova||36
+ATXMEGA128A1-AU||100
+ATXMEGA256A3-AU||65
+Battery||2
+C||2
+Capacitor||2
+CP||2
+CT||2
+CV||2
+CVT||3
+D||2
+DC-DC Converter TPS63020||22
+Diode||2
+DNFET||4
+DNMOS||4
+DOTMAT||12
+DPFET||4
+DPMOS||4
+DS||2
+EARTH||1
+Electrolytic Capacitor||2
+FROM||1
+FUSE||2
+FUSE2||2
+GND||1
+jumper pins (2)||2
+L||2
+LED||2
+LETTER||0
+N||3
+NFET||3
+NFETD||4
+NMOS||3
+NMOS with Tab||4
+NPNTRAN||3
+PFET||3
+PMOS||3
+PNPTRAN||3
+Pressure Sensor||8
+R||2
+RA||2
+RP||3
+RPA||3
+RV||3
+RVA||3
+S||3
+SBLOCK||3
+SCR||3
+T||4
+TO||1
+TRIAC||3
+TT||5
+Xmega PDI header||6
+XTAL||2
+YBLOCK||3
+ZD||2
+ZENERD||2

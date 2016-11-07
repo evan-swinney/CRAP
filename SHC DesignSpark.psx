@@ -1,0 +1,56 @@
+2 pin 6.5mm spacing circular||2
+2-Pin 2mm Pitch||2
+2x1 0.1in circ (d=6.3mm)||2
+2x1 0.1in Pin Connector||2
+2x1 5.3'||2
+2x2 0.1in Conn||2
+2x3 0.1in Conn||6
+2x3 0.05 in Conn||6
+2x5 0.1in Conn||10
+3x1 0.1in Pin Connector||3
+3x1 0.2in Conn||3
+4x1 0.1in Pin Connector||4
+5mm LED||2
+6x1 0.1in Pin Connector||6
+7 Pin MAE311 AJB||7
+8 Pin Molex||8
+8 pin SOIC (Spansion Flash)||8
+8-MSOP||8
+8-SOIC||8
+10-VSSOP||10
+12-MSOP||13
+14-LGA||14
+16-LGA (3x3)||16
+24-TSSOP||24
+32TQFP||32
+64A||65
+64A-L||65
+64A-L Skyfall||65
+64A-M||65
+100A||100
+100A-L||100
+100A-M||100
+0402||2
+0603||2
+Antenova M10478-A3||28
+Barrel Power Connector||4
+CR123 Holder||2
+CW181-ND Button||2
+DO-214 (SMA)||2
+DPAK Style||3
+DPAK [Modified] Style||3
+LGA-28||28
+MIC29150 VREG [D2PAK]||4
+MOSFET STD17NF03LT4||3
+MS5611||8
+QFN-24||25
+SOIC8-adesto-flash||8
+SOT-23||3
+SOT-23A-3||3
+SOT-223||4
+SOT23-3||3
+SOT23-5||5
+SSOP-16||16
+USB-Mini Port||9
+VSON 14 (TI)||22
+Xbee-PRO 900HP||20
