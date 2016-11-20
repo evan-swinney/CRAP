@@ -4,4 +4,4 @@ Designed by:
 Evan Swinney
 Cooper Barry
 James Biaglow
-Daniel Correy
+Daniel Corey
