@@ -1,7 +1,10 @@
-The CRAP project is a Common Rocket Avionics Package, designed specifically for UAH space hardware club.
+The Common Rocketry Avionics Package (CRAP) project is an avionics package, designed specifically for UAH space hardware club to be flown on the multistage team's rocket.  This payload will fire all ordance, motors, and will also provide data telemetry and storage.
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 Designed by:
-Evan Swinney
-Cooper Barry
-James Biaglow
-Daniel Corey
+Cooper Barry - Team lead
+Evan Swinney - Hardware design
+James Biaglow - Hardware design and integration
+Daniel Corey - Software Design
+Will Watson - Software Design
