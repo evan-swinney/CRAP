@@ -2450,6 +2450,22 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
+<package name="R0603">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 </packages>
 </library>
 <library name="texas">
@@ -2483,6 +2499,79 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="-1.3" y1="2" x2="-1.8" y2="1.4" width="0.127" layer="21"/>
 <text x="-1.9" y="2.2" size="1.27" layer="25">&gt;Name</text>
 <text x="-1.9" y="-3.5" size="1.27" layer="25">&gt;Value</text>
+</package>
+</packages>
+</library>
+<library name="transistor-fet">
+<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+&lt;p&gt;
+Symbols changed according to IEC617&lt;p&gt; 
+All types, packages and assignment to symbols and pins checked&lt;p&gt;
+Package outlines partly checked&lt;p&gt;
+&lt;p&gt;
+JFET = junction FET&lt;p&gt;
+IGBT-x = insulated gate bipolar transistor&lt;p&gt;
+x=N: NPN; x=P: PNP&lt;p&gt;
+IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
+m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
+m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
+c: N=N-channel; P=P-Channel&lt;p&gt;
+GDSB: gate, drain, source, bulk&lt;p&gt;
+&lt;p&gt;
+by R. Vogg  15.March.2002</description>
+<packages>
+<package name="TO252">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
+TS-003</description>
+<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
+<wire x1="-3.973" y1="5.983" x2="3.973" y2="5.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-5.983" x2="-3.973" y2="-5.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-5.983" x2="-3.973" y2="5.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="5.983" x2="3.973" y2="-5.983" width="0.0508" layer="39"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="3" x="0" y="2.5" dx="5.4" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
+</package>
+</packages>
+</library>
+<library name="inductor-coilcraft">
+<description>&lt;b&gt;Coilcraft SMD Inductors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="B82462G4">
+<smd name="P$1" x="-2.75" y="0" dx="1.5" dy="2.4" layer="1"/>
+<smd name="P$2" x="2.75" y="0" dx="1.5" dy="2.4" layer="1"/>
+<wire x1="-3.15" y1="3.15" x2="3.15" y2="3.15" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-3.15" x2="3.15" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-3.15" x2="-3.15" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="3.15" x2="-3.15" y2="1.55" width="0.127" layer="21"/>
+<wire x1="3.15" y1="3.15" x2="3.15" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-3.15" x2="3.15" y2="-1.5" width="0.127" layer="21"/>
+<text x="-3" y="3.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -2684,6 +2773,23 @@ design rules under a new name.</description>
 <element name="DCDC_REGULATOR1:C2" library="rcl" package="C0805" value="10u" x="-3" y="-19"/>
 <element name="DCDC_REGULATOR1:C3" library="rcl" package="C0805" value="10u" x="-3" y="-25"/>
 <element name="DCDC_REGULATOR1:U$1" library="texas" package="VQFN15_2.5X3" value="TPS6307X" x="-11" y="-24"/>
+<element name="DCDC_REGULATOR1:Q1" library="transistor-fet" package="TO252" value="IPD042P03L3G" x="-19" y="-20"/>
+<element name="DCDC_REGULATOR1:Q2" library="transistor-fet" package="TO252" value="IPD042P03L3G" x="-31" y="-20"/>
+<element name="DCDC_REGULATOR1:R1" library="rcl" package="R0603" value="" x="-35" y="-31"/>
+<element name="DCDC_REGULATOR1:C4" library="rcl" package="C0603" value="" x="-33" y="-36"/>
+<element name="DCDC_REGULATOR1:L1" library="inductor-coilcraft" package="B82462G4" value="B82462G4102M" x="-41" y="-31"/>
+<element name="DCDC_REGULATOR1:R2" library="rcl" package="R0603" value="" x="-43" y="-40"/>
+<element name="DCDC_REGULATOR1:C5" library="rcl" package="C0603" value="100n" x="-41" y="-45"/>
+<element name="DCDC_REGULATOR1:R3" library="rcl" package="R0603" value="470k, 1%" x="-43" y="-50"/>
+<element name="DCDC_REGULATOR1:R4" library="rcl" package="R0603" value="150k, 1%" x="-43" y="-55"/>
+<element name="DCDC_REGULATOR1:R5" library="rcl" package="R0603" value="100k" x="-43" y="-60"/>
+<element name="DCDC_REGULATOR1:R6" library="rcl" package="R0603" value="10k" x="-43" y="-65"/>
+<element name="DCDC_REGULATOR1:C6" library="rcl" package="C0603" value="10u" x="-41" y="-70"/>
+<element name="DCDC_REGULATOR1:C7" library="rcl" package="C0805" value="22u" x="-42" y="-76"/>
+<element name="DCDC_REGULATOR1:C8" library="rcl" package="C0805" value="22u" x="-42" y="-83"/>
+<element name="DCDC_REGULATOR1:C9" library="rcl" package="C0805" value="22u" x="-42" y="-90"/>
+<element name="DCDC_REGULATOR1:C10" library="rcl" package="C0805" value="22u" x="-42" y="-97"/>
+<element name="DCDC_REGULATOR1:C11" library="rcl" package="C0805" value="22u" x="-42" y="-104"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2823,6 +2929,90 @@ design rules under a new name.</description>
 </signal>
 <signal name="DCDC_REGULATOR1:N$1">
 <contactref element="DCDC_REGULATOR1:U$1" pad="P$12"/>
+<contactref element="DCDC_REGULATOR1:Q2" pad="2"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$13"/>
+<contactref element="DCDC_REGULATOR1:R6" pad="2"/>
+<wire x1="-28.72" y1="-24.8" x2="-42.15" y2="-65" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.73" y1="-22.6" x2="-28.72" y2="-24.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.225" y1="-22.6" x2="-10.73" y2="-22.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$2">
+<contactref element="DCDC_REGULATOR1:Q1" pad="3"/>
+<contactref element="DCDC_REGULATOR1:Q2" pad="3"/>
+<contactref element="DCDC_REGULATOR1:Q1" pad="1"/>
+<contactref element="DCDC_REGULATOR1:R1" pad="2"/>
+<wire x1="-31" y1="-17.5" x2="-34.15" y2="-31" width="0" layer="19" extent="1-1"/>
+<wire x1="-19" y1="-17.5" x2="-31" y2="-17.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.28" y1="-24.8" x2="-19" y2="-17.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$4">
+<contactref element="DCDC_REGULATOR1:Q2" pad="1"/>
+<contactref element="DCDC_REGULATOR1:R1" pad="1"/>
+<contactref element="DCDC_REGULATOR1:C4" pad="1"/>
+<contactref element="DCDC_REGULATOR1:R2" pad="1"/>
+<wire x1="-33.85" y1="-36" x2="-43.85" y2="-40" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.85" y1="-31" x2="-33.85" y2="-36" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.28" y1="-24.8" x2="-35.85" y2="-31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$3">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$11"/>
+<contactref element="DCDC_REGULATOR1:L1" pad="P$1"/>
+<wire x1="-10.225" y1="-23.5" x2="-43.75" y2="-31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$5">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$9"/>
+<contactref element="DCDC_REGULATOR1:L1" pad="P$2"/>
+<wire x1="-10.225" y1="-24.5" x2="-38.25" y2="-31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$6">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$7"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$8"/>
+<contactref element="DCDC_REGULATOR1:R3" pad="2"/>
+<contactref element="DCDC_REGULATOR1:R5" pad="2"/>
+<contactref element="DCDC_REGULATOR1:C11" pad="1"/>
+<contactref element="DCDC_REGULATOR1:C10" pad="1"/>
+<contactref element="DCDC_REGULATOR1:C9" pad="1"/>
+<contactref element="DCDC_REGULATOR1:C8" pad="1"/>
+<contactref element="DCDC_REGULATOR1:C7" pad="1"/>
+<contactref element="DCDC_REGULATOR1:C6" pad="1"/>
+<wire x1="-42.95" y1="-97" x2="-42.95" y2="-104" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.95" y1="-90" x2="-42.95" y2="-97" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.95" y1="-83" x2="-42.95" y2="-90" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.95" y1="-76" x2="-42.95" y2="-83" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.85" y1="-70" x2="-42.95" y2="-76" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.15" y1="-60" x2="-41.85" y2="-70" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.15" y1="-50" x2="-42.15" y2="-60" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.725" y1="-25.4" x2="-42.15" y2="-50" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.225" y1="-25.4" x2="-10.725" y2="-25.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$7">
+<contactref element="DCDC_REGULATOR1:C5" pad="1"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$3"/>
+<wire x1="-12.15" y1="-24.25" x2="-41.85" y2="-45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$8">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$10"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$4"/>
+<wire x1="-12.15" y1="-24.75" x2="-10.4" y2="-24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$10">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$5"/>
+<contactref element="DCDC_REGULATOR1:R3" pad="1"/>
+<contactref element="DCDC_REGULATOR1:R4" pad="2"/>
+<wire x1="-43.85" y1="-50" x2="-42.15" y2="-55" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.725" y1="-25.4" x2="-43.85" y2="-50" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$9">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$2"/>
+<contactref element="DCDC_REGULATOR1:R5" pad="1"/>
+<wire x1="-12.15" y1="-23.75" x2="-43.85" y2="-60" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$11">
+<contactref element="DCDC_REGULATOR1:R6" pad="1"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$1"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$14"/>
+<wire x1="-12.15" y1="-23.25" x2="-43.85" y2="-65" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.225" y1="-22.6" x2="-12.15" y2="-23.25" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
