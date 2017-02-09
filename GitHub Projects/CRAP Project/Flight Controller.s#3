@@ -10054,6 +10054,18 @@ TS-003</description>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="L1" library="inductor-coilcraft" deviceset="B82462G4102M" device=""/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="470k, 1%"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="150k, 1%"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="10u"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
 </parts>
 <sheets>
 <sheet>
@@ -10064,8 +10076,12 @@ Headers for battery connections</text>
 are not of the same physical
 size! Place the 0603 nearest 
 to the chip.</text>
-<text x="-99.06" y="-7.62" size="1.778" layer="91">RBF goes here connecting
-the MOSFET gate to ground.</text>
+<text x="-99.06" y="-17.78" size="1.778" layer="91">RBF goes here connecting
+the MOSFET gate to ground
+via the resistor.</text>
+<text x="78.74" y="15.24" size="1.778" layer="91">Place the 10uF, 0603
+as close to the chip
+as possible</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="-40.64" y="10.16"/>
@@ -10077,6 +10093,18 @@ the MOSFET gate to ground.</text>
 <instance part="R1" gate="G$1" x="-114.3" y="5.08" rot="R90"/>
 <instance part="C4" gate="G$1" x="-114.3" y="-7.62"/>
 <instance part="L1" gate="G$1" x="0" y="33.02" rot="R90"/>
+<instance part="R2" gate="G$1" x="-106.68" y="-12.7" rot="R270"/>
+<instance part="C5" gate="G$1" x="-25.4" y="-20.32"/>
+<instance part="R3" gate="G$1" x="43.18" y="5.08" rot="R90"/>
+<instance part="R4" gate="G$1" x="43.18" y="-10.16" rot="R90"/>
+<instance part="R5" gate="G$1" x="55.88" y="-2.54" rot="R90"/>
+<instance part="R6" gate="G$1" x="-30.48" y="5.08" rot="R90"/>
+<instance part="C6" gate="G$1" x="68.58" y="7.62"/>
+<instance part="C7" gate="G$1" x="78.74" y="7.62"/>
+<instance part="C8" gate="G$1" x="86.36" y="7.62"/>
+<instance part="C9" gate="G$1" x="93.98" y="7.62"/>
+<instance part="C10" gate="G$1" x="101.6" y="7.62"/>
+<instance part="C11" gate="G$1" x="109.22" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -10085,12 +10113,16 @@ the MOSFET gate to ground.</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VIN@1"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="-99.06" y1="15.24" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="15.24" x2="-30.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="15.24" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="15.24" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="15.24" x2="-20.32" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VIN@2"/>
 <wire x1="-20.32" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-20.32" y="15.24"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="10.16" x2="-30.48" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-30.48" y="15.24"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10120,6 +10152,9 @@ the MOSFET gate to ground.</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-114.3" y1="-2.54" x2="-114.3" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-114.3" y="-2.54"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-106.68" y1="-7.62" x2="-106.68" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-106.68" y="-2.54"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -10147,6 +10182,86 @@ the MOSFET gate to ground.</text>
 <wire x1="17.78" y1="15.24" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VOUT@2"/>
 <wire x1="17.78" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="12.7" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="12.7" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="12.7" x2="55.88" y2="2.54" width="0.1524" layer="91"/>
+<junction x="43.18" y="12.7"/>
+<junction x="17.78" y="12.7"/>
+<wire x1="55.88" y1="12.7" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="12.7" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="12.7" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="12.7" x2="109.22" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="12.7" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="12.7" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="12.7" x2="93.98" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="12.7" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="12.7" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="12.7" x2="68.58" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="-25.4" y1="-17.78" x2="-25.4" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VAUX"/>
+<wire x1="-25.4" y1="-12.7" x2="-17.78" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PGND"/>
+<wire x1="15.24" y1="-7.62" x2="22.86" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-7.62" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="22.86" y1="-12.7" x2="22.86" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-12.7" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="22.86" y="-12.7"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="FB"/>
+<wire x1="15.24" y1="5.08" x2="38.1" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="5.08" x2="38.1" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="0" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-2.54" x2="43.18" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-2.54" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="43.18" y="-2.54"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PG"/>
+<wire x1="15.24" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-2.54" x2="27.94" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-27.94" x2="55.88" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="-27.94" x2="55.88" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="0" x2="-30.48" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PS/SYNC"/>
+<wire x1="-30.48" y1="-2.54" x2="-30.48" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-7.62" x2="-17.78" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="EN"/>
+<wire x1="-17.78" y1="-2.54" x2="-30.48" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-2.54"/>
 </segment>
 </net>
 </nets>

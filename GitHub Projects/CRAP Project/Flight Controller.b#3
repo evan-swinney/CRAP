@@ -2778,6 +2778,12 @@ design rules under a new name.</description>
 <element name="DCDC_REGULATOR1:R1" library="rcl" package="R0603" value="" x="-35" y="-31"/>
 <element name="DCDC_REGULATOR1:C4" library="rcl" package="C0603" value="" x="-33" y="-36"/>
 <element name="DCDC_REGULATOR1:L1" library="inductor-coilcraft" package="B82462G4" value="B82462G4102M" x="-41" y="-31"/>
+<element name="DCDC_REGULATOR1:R2" library="rcl" package="R0603" value="" x="-43" y="-40"/>
+<element name="DCDC_REGULATOR1:C5" library="rcl" package="C0603" value="100n" x="-41" y="-45"/>
+<element name="DCDC_REGULATOR1:R3" library="rcl" package="R0603" value="470k, 1%" x="-43" y="-50"/>
+<element name="DCDC_REGULATOR1:R4" library="rcl" package="R0603" value="150k, 1%" x="-43" y="-55"/>
+<element name="DCDC_REGULATOR1:R5" library="rcl" package="R0603" value="100k" x="-43" y="-60"/>
+<element name="DCDC_REGULATOR1:R6" library="rcl" package="R0603" value="10k" x="-43" y="-65"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2919,6 +2925,8 @@ design rules under a new name.</description>
 <contactref element="DCDC_REGULATOR1:U$1" pad="P$12"/>
 <contactref element="DCDC_REGULATOR1:Q2" pad="2"/>
 <contactref element="DCDC_REGULATOR1:U$1" pad="P$13"/>
+<contactref element="DCDC_REGULATOR1:R6" pad="2"/>
+<wire x1="-28.72" y1="-24.8" x2="-42.15" y2="-65" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.73" y1="-22.6" x2="-28.72" y2="-24.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.225" y1="-22.6" x2="-10.73" y2="-22.6" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2935,6 +2943,8 @@ design rules under a new name.</description>
 <contactref element="DCDC_REGULATOR1:Q2" pad="1"/>
 <contactref element="DCDC_REGULATOR1:R1" pad="1"/>
 <contactref element="DCDC_REGULATOR1:C4" pad="1"/>
+<contactref element="DCDC_REGULATOR1:R2" pad="1"/>
+<wire x1="-33.85" y1="-36" x2="-43.85" y2="-40" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.85" y1="-31" x2="-33.85" y2="-36" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.28" y1="-24.8" x2="-35.85" y2="-31" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2951,7 +2961,40 @@ design rules under a new name.</description>
 <signal name="DCDC_REGULATOR1:N$6">
 <contactref element="DCDC_REGULATOR1:U$1" pad="P$7"/>
 <contactref element="DCDC_REGULATOR1:U$1" pad="P$8"/>
+<contactref element="DCDC_REGULATOR1:R3" pad="2"/>
+<contactref element="DCDC_REGULATOR1:R5" pad="2"/>
+<wire x1="-42.15" y1="-50" x2="-42.15" y2="-60" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.725" y1="-25.4" x2="-42.15" y2="-50" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.225" y1="-25.4" x2="-10.725" y2="-25.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$7">
+<contactref element="DCDC_REGULATOR1:C5" pad="1"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$3"/>
+<wire x1="-12.15" y1="-24.25" x2="-41.85" y2="-45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$8">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$10"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$4"/>
+<wire x1="-12.15" y1="-24.75" x2="-10.4" y2="-24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$10">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$5"/>
+<contactref element="DCDC_REGULATOR1:R3" pad="1"/>
+<contactref element="DCDC_REGULATOR1:R4" pad="2"/>
+<wire x1="-43.85" y1="-50" x2="-42.15" y2="-55" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.725" y1="-25.4" x2="-43.85" y2="-50" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$9">
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$2"/>
+<contactref element="DCDC_REGULATOR1:R5" pad="1"/>
+<wire x1="-12.15" y1="-23.75" x2="-43.85" y2="-60" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DCDC_REGULATOR1:N$11">
+<contactref element="DCDC_REGULATOR1:R6" pad="1"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$1"/>
+<contactref element="DCDC_REGULATOR1:U$1" pad="P$14"/>
+<wire x1="-12.15" y1="-23.25" x2="-43.85" y2="-65" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.225" y1="-22.6" x2="-12.15" y2="-23.25" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
