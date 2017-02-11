@@ -12980,7 +12980,7 @@ limit to 0.3A</text>
 <moduleinsts>
 <moduleinst name="MS5611-1" module="MS5611" x="55.88" y="43.18"/>
 <moduleinst name="DCDC_REGULATOR1" module="DCDC_REGULATOR" x="-149.86" y="91.44"/>
-<moduleinst name="ORDNANCE1" module="ORDNANCE" x="-170.18" y="50.8"/>
+<moduleinst name="ORDNANCE1" module="ORDNANCE" x="-149.86" y="53.34"/>
 </moduleinsts>
 <instances>
 <instance part="JP1" gate="A" x="-40.64" y="91.44"/>

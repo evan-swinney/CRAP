@@ -5590,6 +5590,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="RTD1" library="pot" deviceset="TRIM_US-" device="3223G"/>
 <part name="RW6" library="rcl" deviceset="R-US_" device="R0603"/>
 <part name="RW7" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="RW5" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="RTD2" library="pot" deviceset="TRIM_US-" device="3223G"/>
+<part name="RW8" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="RW9" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="RW10" library="rcl" deviceset="R-US_" device="R0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -5628,6 +5633,26 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="69.85" y="-79.7814" size="1.778" layer="95"/>
 <attribute name="VALUE" x="69.85" y="-84.582" size="1.778" layer="96"/>
 </instance>
+<instance part="RW5" gate="G$1" x="121.92" y="5.08" smashed="yes">
+<attribute name="NAME" x="118.11" y="6.5786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="1.778" size="1.778" layer="96"/>
+</instance>
+<instance part="RTD2" gate="G$1" x="149.86" y="-12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="152.4" y="-12.7" size="1.778" layer="95"/>
+<attribute name="VALUE" x="152.4" y="-10.16" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="RW8" gate="G$1" x="137.16" y="12.7" smashed="yes">
+<attribute name="NAME" x="133.35" y="14.1986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="133.35" y="9.398" size="1.778" layer="96"/>
+</instance>
+<instance part="RW9" gate="G$1" x="134.62" y="-40.64" smashed="yes">
+<attribute name="NAME" x="130.81" y="-39.1414" size="1.778" layer="95"/>
+<attribute name="VALUE" x="130.81" y="-43.942" size="1.778" layer="96"/>
+</instance>
+<instance part="RW10" gate="G$1" x="121.92" y="-30.48" smashed="yes">
+<attribute name="NAME" x="118.11" y="-28.9814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="-33.782" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5638,6 +5663,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="40.64" y1="2.54" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
 <label x="40.64" y="2.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RW5" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="5.08" x2="116.84" y2="5.08" width="0.1524" layer="91"/>
+<label x="106.68" y="5.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="S+" class="0">
 <segment>
@@ -5645,6 +5675,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="RW2" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="2.54" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
 <label x="63.5" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RW8" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
+<label x="106.68" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5670,12 +5705,22 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="60.96" y1="-33.02" x2="68.58" y2="-33.02" width="0.1524" layer="91"/>
 <label x="63.5" y="-33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RW9" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="-40.64" x2="106.68" y2="-40.64" width="0.1524" layer="91"/>
+<label x="106.68" y="-40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="EXC–" class="0">
 <segment>
 <pinref part="RW4" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="-33.02" x2="40.64" y2="-33.02" width="0.1524" layer="91"/>
 <label x="40.64" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RW10" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="-30.48" x2="106.68" y2="-30.48" width="0.1524" layer="91"/>
+<label x="106.68" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5706,6 +5751,30 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="RW7" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="-81.28" x2="40.64" y2="-81.28" width="0.1524" layer="91"/>
 <label x="40.64" y="-81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="RW5" gate="G$1" pin="2"/>
+<wire x1="127" y1="5.08" x2="149.86" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="RTD2" gate="G$1" pin="A"/>
+<wire x1="149.86" y1="5.08" x2="149.86" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="RW8" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="12.7" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="12.7" x2="149.86" y2="5.08" width="0.1524" layer="91"/>
+<junction x="149.86" y="5.08"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="RTD2" gate="G$1" pin="E"/>
+<wire x1="149.86" y1="-20.32" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="RW10" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="-30.48" x2="127" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="RW9" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="-40.64" x2="149.86" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-40.64" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="149.86" y="-30.48"/>
 </segment>
 </net>
 </nets>

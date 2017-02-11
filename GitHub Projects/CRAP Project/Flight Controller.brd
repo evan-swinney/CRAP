@@ -2620,6 +2620,75 @@ http://www.linear-tech.com&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="microchip">
+<description>&lt;b&gt;Microchip PIC Microcontrollers and other Devices&lt;/b&gt;&lt;p&gt;
+Based on the following sources :
+&lt;ul&gt;
+&lt;li&gt;Microchip Data Book, 1993
+&lt;li&gt;THE EMERGING WORLD STANDARD, 1995/1996
+&lt;li&gt;Microchip, Technical Library CD-ROM, June 1998
+&lt;li&gt;www.microchip.com
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23-6">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
+<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
+<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
+<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
+<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="maxim">
+<description>&lt;b&gt;Maxim Components&lt;/b&gt;&lt;p&gt;
+
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="UMAX8">
+<description>&lt;b&gt;micro MAX Package&lt;/b&gt;</description>
+<wire x1="-1.4" y1="1.4" x2="1.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="1.4" x2="1.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-1.4" x2="-1.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-1.4" x2="-1.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-0.7" y1="-1.1" x2="-0.7" y2="-0.4" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-0.7" y1="-0.4" x2="-0.7" y2="-1.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.975" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="2" x="-0.325" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="3" x="0.325" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="4" x="0.975" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="5" x="0.975" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="6" x="0.325" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="7" x="-0.325" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="8" x="-0.975" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<text x="-1.636" y="-2.286" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.906" y="-2.286" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.1528" y1="-2.4036" x2="-0.7972" y2="-1.4384" layer="51"/>
+<rectangle x1="-0.5028" y1="-2.4036" x2="-0.1472" y2="-1.4384" layer="51"/>
+<rectangle x1="0.1472" y1="-2.4036" x2="0.5028" y2="-1.4384" layer="51"/>
+<rectangle x1="0.7972" y1="-2.4036" x2="1.1528" y2="-1.4384" layer="51"/>
+<rectangle x1="0.7972" y1="1.4384" x2="1.1528" y2="2.4036" layer="51"/>
+<rectangle x1="0.1472" y1="1.4384" x2="0.5028" y2="2.4036" layer="51"/>
+<rectangle x1="-0.5028" y1="1.4384" x2="-0.1472" y2="2.4036" layer="51"/>
+<rectangle x1="-1.1528" y1="1.4384" x2="-0.7972" y2="2.4036" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2844,6 +2913,20 @@ design rules under a new name.</description>
 <element name="ORDNANCE1:R3" library="resistor" package="R0603" value="12k" x="-43" y="-142"/>
 <element name="ORDNANCE1:R4" library="resistor" package="R0603" value="10k" x="-43" y="-147"/>
 <element name="ORDNANCE1:C4" library="rcl" package="C0603" value="1u" x="-41" y="-152"/>
+<element name="RTD1:U$1" library="microchip" package="SOT23-6" value="MCP1501-18" x="-49" y="-151"/>
+<element name="RTD1:C1" library="rcl" package="C0603" value="1u" x="-48" y="-157"/>
+<element name="RTD1:C2" library="rcl" package="C0603" value="1u" x="-48" y="-166"/>
+<element name="RTD1:R2" library="rcl" package="R0603" value="15k" x="-49" y="-171"/>
+<element name="RTD1:U$2" library="maxim" package="UMAX8" value="MAX4377T" x="-55" y="-169"/>
+<element name="RTD1:C3" library="rcl" package="C0603" value="1u" x="-55" y="-181"/>
+<element name="RTD1:R4" library="rcl" package="R0603" value="15k" x="-56" y="-186"/>
+<element name="RTD1:C5" library="rcl" package="C0603" value="1u" x="-55" y="-196"/>
+<element name="RTD1:R5" library="rcl" package="R0603" value="15k" x="-56" y="-201"/>
+<element name="RTD1:C6" library="rcl" package="C0603" value="1u" x="-55" y="-206"/>
+<element name="RTD1:R6" library="rcl" package="R0603" value="15k" x="-56" y="-216"/>
+<element name="RTD1:C7" library="rcl" package="C0603" value="1u" x="-55" y="-211"/>
+<element name="RTD1:R7" library="rcl" package="R0603" value="15k" x="-56" y="-221"/>
+<element name="RTD1:C4" library="rcl" package="C0603" value="1u" x="-55" y="-226"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3156,6 +3239,80 @@ design rules under a new name.</description>
 <wire x1="-42.15" y1="-147" x2="-41.85" y2="-152" width="0" layer="19" extent="1-1"/>
 <wire x1="-43.85" y1="-137" x2="-42.15" y2="-147" width="0" layer="19" extent="1-1"/>
 <wire x1="-40" y1="-111.85" x2="-43.85" y2="-137" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$1">
+<contactref element="RTD1:U$1" pad="1"/>
+<contactref element="RTD1:R2" pad="2"/>
+<contactref element="RTD1:C2" pad="1"/>
+<wire x1="-48.85" y1="-166" x2="-48.15" y2="-171" width="0" layer="19" extent="1-1"/>
+<wire x1="-49.95" y1="-152.15" x2="-48.85" y2="-166" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$2">
+<contactref element="RTD1:C1" pad="1"/>
+<contactref element="RTD1:U$1" pad="6"/>
+<wire x1="-49.95" y1="-149.85" x2="-48.85" y2="-157" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$3">
+<contactref element="RTD1:U$1" pad="2"/>
+<contactref element="RTD1:U$1" pad="3"/>
+<wire x1="-48.05" y1="-152.15" x2="-49" y2="-152.15" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$4">
+<contactref element="RTD1:U$1" pad="5"/>
+</signal>
+<signal name="RTD1:GND">
+<contactref element="RTD1:U$2" pad="4"/>
+</signal>
+<signal name="RTD1:S2–">
+<contactref element="RTD1:U$2" pad="6"/>
+</signal>
+<signal name="RTD1:S1–">
+<contactref element="RTD1:U$2" pad="2"/>
+</signal>
+<signal name="RTD1:N$7">
+<contactref element="RTD1:U$2" pad="1"/>
+<contactref element="RTD1:R4" pad="2"/>
+<wire x1="-55.975" y1="-171.175" x2="-55.15" y2="-186" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$8">
+<contactref element="RTD1:R4" pad="1"/>
+<contactref element="RTD1:R5" pad="2"/>
+<contactref element="RTD1:C3" pad="1"/>
+<wire x1="-55.85" y1="-181" x2="-56.85" y2="-186" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.15" y1="-201" x2="-56.85" y2="-186" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$9">
+<contactref element="RTD1:R5" pad="1"/>
+<contactref element="RTD1:C4" pad="1"/>
+<wire x1="-56.85" y1="-201" x2="-55.85" y2="-226" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$10">
+<contactref element="RTD1:U$2" pad="7"/>
+<contactref element="RTD1:R6" pad="2"/>
+<wire x1="-55.15" y1="-216" x2="-55.325" y2="-166.825" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$11">
+<contactref element="RTD1:R6" pad="1"/>
+<contactref element="RTD1:R7" pad="2"/>
+<contactref element="RTD1:C6" pad="1"/>
+<wire x1="-56.85" y1="-216" x2="-55.15" y2="-221" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.85" y1="-206" x2="-56.85" y2="-216" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$12">
+<contactref element="RTD1:R7" pad="1"/>
+<contactref element="RTD1:C7" pad="1"/>
+<wire x1="-55.85" y1="-211" x2="-56.85" y2="-221" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:N$13">
+<contactref element="RTD1:C5" pad="2"/>
+<contactref element="RTD1:U$2" pad="8"/>
+<wire x1="-55.975" y1="-166.825" x2="-54.15" y2="-196" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RTD1:S1+">
+<contactref element="RTD1:U$2" pad="3"/>
+</signal>
+<signal name="RTD1:S2+">
+<contactref element="RTD1:U$2" pad="5"/>
 </signal>
 </signals>
 </board>
