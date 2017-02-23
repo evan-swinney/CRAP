@@ -3250,6 +3250,7 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
+<<<<<<< HEAD
 <package name="R0402">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
@@ -4797,6 +4798,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
+=======
+>>>>>>> origin/master
 </packages>
 <symbols>
 <symbol name="C-EU-1">
@@ -4809,6 +4812,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
+<<<<<<< HEAD
 <symbol name="R-US">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
@@ -4824,6 +4828,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+=======
+>>>>>>> origin/master
 </symbols>
 <devicesets>
 <deviceset name="C-EU" prefix="C" uservalue="yes">
@@ -4833,6 +4839,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </gates>
 <devices>
 <device name="C0402" package="C0402">
+<<<<<<< HEAD
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11251,6 +11258,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </technologies>
 </device>
 <device name="R0603" package="R0603">
+=======
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11817,6 +11826,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="RDH/15" package="RDH/15">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -11890,6 +11900,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </technologies>
 </device>
 <device name="VTA54" package="VTA54">
+=======
+<device name="275-154X316" package="C275-154X316">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11898,7 +11911,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="VTA55" package="VTA55">
+=======
+<device name="275-173X316" package="C275-173X316">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11907,7 +11924,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="VTA56" package="VTA56">
+=======
+<device name="C0402K" package="C0402K">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11916,7 +11937,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="R4527" package="R4527">
+=======
+<device name="C0603K" package="C0603K">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11925,7 +11950,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="WSC0001" package="WSC0001">
+=======
+<device name="C0805K" package="C0805K">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11934,7 +11963,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="WSC0002" package="WSC0002">
+=======
+<device name="C1206K" package="C1206K">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11943,7 +11976,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="WSC01/2" package="WSC01/2">
+=======
+<device name="C1210K" package="C1210K">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11952,7 +11989,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="WSC2515" package="WSC2515">
+=======
+<device name="C1812K" package="C1812K">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11961,7 +12002,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="WSC4527" package="WSC4527">
+=======
+<device name="C1825K" package="C1825K">
+>>>>>>> origin/master
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11970,6 +12015,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 <device name="WSC6927" package="WSC6927">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -12091,11 +12137,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="VOUT@1" pad="P$7"/>
 <connect gate="G$1" pin="VOUT@2" pad="P$8"/>
 <connect gate="G$1" pin="VSEL" pad="P$15"/>
+=======
+<device name="C2220K" package="C2220K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+>>>>>>> origin/master
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 </devices>
 </deviceset>
 </devicesets>
@@ -12204,11 +12257,18 @@ TS-003</description>
 <connect gate="G$1" pin="D" pad="2"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
+=======
+<device name="C2225K" package="C2225K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+>>>>>>> origin/master
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 </devices>
 </deviceset>
 </devicesets>
@@ -12256,11 +12316,18 @@ TS-003</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+=======
+<device name="HPC0201" package="HPC0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+>>>>>>> origin/master
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
+<<<<<<< HEAD
 </devices>
 </deviceset>
 </devicesets>
@@ -12338,6 +12405,39 @@ This will only draw 300mA.  It uses a charge pump architecture and is also meant
 <connect gate="G$1" pin="SHDN" pad="P4"/>
 <connect gate="G$1" pin="VIN" pad="P9"/>
 <connect gate="G$1" pin="VSEL" pad="P6"/>
+=======
+<device name="C0201" package="C0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C1808" package="C1808">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C3640" package="C3640">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="01005" package="C01005">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+>>>>>>> origin/master
 </connects>
 <technologies>
 <technology name=""/>
@@ -12452,6 +12552,7 @@ This will only draw 300mA.  It uses a charge pump architecture and is also meant
 </sheet>
 </sheets>
 </module>
+<<<<<<< HEAD
 <module name="DCDC_REGULATOR" prefix="" dx="30.48" dy="20.32">
 <ports>
 <port name="PWR" side="left" coord="5.08" direction="io"/>
@@ -12963,6 +13064,8 @@ limit to 0.3A</text>
 </sheet>
 </sheets>
 </module>
+=======
+>>>>>>> origin/master
 </modules>
 <parts>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X3" device=""/>
@@ -12979,8 +13082,11 @@ limit to 0.3A</text>
 </plain>
 <moduleinsts>
 <moduleinst name="MS5611-1" module="MS5611" x="55.88" y="43.18"/>
+<<<<<<< HEAD
 <moduleinst name="DCDC_REGULATOR1" module="DCDC_REGULATOR" x="-149.86" y="91.44"/>
 <moduleinst name="ORDNANCE1" module="ORDNANCE" x="-170.18" y="50.8"/>
+=======
+>>>>>>> origin/master
 </moduleinsts>
 <instances>
 <instance part="JP1" gate="A" x="-40.64" y="91.44"/>
