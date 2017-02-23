@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13077,10 +13077,10 @@ external 4-wire RTD</text>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="M" module="MS5611" x="55.88" y="43.18"/>
-<moduleinst name="DCDC_REGULATOR1" module="DCDC_REGULATOR" x="-149.86" y="91.44"/>
-<moduleinst name="ORDNANCE1" module="ORDNANCE" x="-149.86" y="53.34"/>
-<moduleinst name="RTD1" module="RTD" x="-152.4" y="17.78"/>
+<moduleinst name="MS5611" module="MS5611" x="55.88" y="43.18" offset="200"/>
+<moduleinst name="DCDC_REGULATOR1" module="DCDC_REGULATOR" x="-149.86" y="91.44" offset="100"/>
+<moduleinst name="ORDNANCE1" module="ORDNANCE" x="-149.86" y="53.34" offset="300"/>
+<moduleinst name="RTD1" module="RTD" x="-152.4" y="17.78" offset="400"/>
 </moduleinsts>
 <instances>
 <instance part="JP1" gate="A" x="-40.64" y="91.44"/>
@@ -13161,25 +13161,25 @@ external 4-wire RTD</text>
 </net>
 <net name="MS5611_SCLK" class="0">
 <segment>
-<portref moduleinst="M" port="SCLK"/>
+<portref moduleinst="MS5611" port="SCLK"/>
 <wire x1="35.56" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MS5611_MISO" class="0">
 <segment>
-<portref moduleinst="M" port="MISO"/>
+<portref moduleinst="MS5611" port="MISO"/>
 <wire x1="35.56" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MS5611_MOSI" class="0">
 <segment>
-<portref moduleinst="M" port="MOSI"/>
+<portref moduleinst="MS5611" port="MOSI"/>
 <wire x1="35.56" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MS5611_CS" class="0">
 <segment>
-<portref moduleinst="M" port="CS"/>
+<portref moduleinst="MS5611" port="CS"/>
 <wire x1="35.56" y1="40.64" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>

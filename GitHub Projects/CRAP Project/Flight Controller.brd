@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2735,52 +2735,52 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="JP1" library="pinhead" package="2X03" value="" x="11" y="67" rot="R180"/>
-<element name="M:C1" library="resistor" package="C0603" value="100n" x="34" y="47" rot="R270"/>
-<element name="M:U1" library="Measurement Specialties" package="MS5611" value="" x="29" y="48"/>
-<element name="DCDC_REGULATOR1:C1" library="rcl" package="C0603" value="10u" x="-3" y="-15"/>
-<element name="DCDC_REGULATOR1:C2" library="rcl" package="C0805" value="10u" x="-3" y="-19"/>
-<element name="DCDC_REGULATOR1:C3" library="rcl" package="C0805" value="10u" x="-3" y="-25"/>
-<element name="DCDC_REGULATOR1:U$1" library="texas" package="VQFN15_2.5X3" value="TPS6307X" x="-11" y="-24"/>
-<element name="DCDC_REGULATOR1:Q1" library="transistor-fet" package="TO252" value="IPD042P03L3G" x="-19" y="-20"/>
-<element name="DCDC_REGULATOR1:Q2" library="transistor-fet" package="TO252" value="IPD042P03L3G" x="-31" y="-20"/>
-<element name="DCDC_REGULATOR1:R1" library="rcl" package="R0603" value="" x="-35" y="-31"/>
-<element name="DCDC_REGULATOR1:C4" library="rcl" package="C0603" value="" x="-33" y="-36"/>
-<element name="DCDC_REGULATOR1:L1" library="inductor-coilcraft" package="B82462G4" value="B82462G4102M" x="-41" y="-31"/>
-<element name="DCDC_REGULATOR1:R2" library="rcl" package="R0603" value="" x="-43" y="-40"/>
-<element name="DCDC_REGULATOR1:C5" library="rcl" package="C0603" value="100n" x="-41" y="-45"/>
-<element name="DCDC_REGULATOR1:R3" library="rcl" package="R0603" value="470k, 1%" x="-43" y="-50"/>
-<element name="DCDC_REGULATOR1:R4" library="rcl" package="R0603" value="150k, 1%" x="-43" y="-55"/>
-<element name="DCDC_REGULATOR1:R5" library="rcl" package="R0603" value="100k" x="-43" y="-60"/>
-<element name="DCDC_REGULATOR1:R6" library="rcl" package="R0603" value="10k" x="-43" y="-65"/>
-<element name="DCDC_REGULATOR1:C6" library="rcl" package="C0603" value="10u" x="-41" y="-70"/>
-<element name="DCDC_REGULATOR1:C7" library="rcl" package="C0805" value="22u" x="-42" y="-76"/>
-<element name="DCDC_REGULATOR1:C8" library="rcl" package="C0805" value="22u" x="-42" y="-83"/>
-<element name="DCDC_REGULATOR1:C9" library="rcl" package="C0805" value="22u" x="-42" y="-90"/>
-<element name="DCDC_REGULATOR1:C10" library="rcl" package="C0805" value="22u" x="-42" y="-97"/>
-<element name="DCDC_REGULATOR1:C11" library="rcl" package="C0805" value="22u" x="-42" y="-104"/>
-<element name="ORDNANCE1:U1" library="linear-technology" package="DFN10-2X3" value="" x="-40" y="-110"/>
-<element name="ORDNANCE1:C1" library="rcl" package="C0805" value="2.2u" x="-42" y="-116"/>
-<element name="ORDNANCE1:C2" library="rcl" package="C0805" value="1u" x="-42" y="-122"/>
-<element name="ORDNANCE1:C3" library="rcl" package="C0603" value="1u" x="-41" y="-127"/>
-<element name="ORDNANCE1:R1" library="resistor" package="R0603" value="10k" x="-43" y="-132"/>
-<element name="ORDNANCE1:R2" library="resistor" package="R0603" value="100k" x="-43" y="-137"/>
-<element name="ORDNANCE1:R3" library="resistor" package="R0603" value="12k" x="-43" y="-142"/>
-<element name="ORDNANCE1:R4" library="resistor" package="R0603" value="10k" x="-43" y="-147"/>
-<element name="ORDNANCE1:C4" library="rcl" package="C0603" value="1u" x="-41" y="-152"/>
-<element name="RTD1:U$1" library="microchip" package="SOT23-6" value="MCP1501-18" x="-49" y="-151"/>
-<element name="RTD1:C1" library="rcl" package="C0603" value="1u" x="-48" y="-157"/>
-<element name="RTD1:C2" library="rcl" package="C0603" value="1u" x="-48" y="-166"/>
-<element name="RTD1:R2" library="rcl" package="R0603" value="15k" x="-49" y="-171"/>
-<element name="RTD1:U$2" library="maxim" package="UMAX8" value="MAX4377T" x="-55" y="-169"/>
-<element name="RTD1:C3" library="rcl" package="C0603" value="1u" x="-55" y="-181"/>
-<element name="RTD1:R4" library="rcl" package="R0603" value="15k" x="-56" y="-186"/>
-<element name="RTD1:C5" library="rcl" package="C0603" value="1u" x="-55" y="-196"/>
-<element name="RTD1:R5" library="rcl" package="R0603" value="15k" x="-56" y="-201"/>
-<element name="RTD1:C6" library="rcl" package="C0603" value="1u" x="-55" y="-206"/>
-<element name="RTD1:R6" library="rcl" package="R0603" value="15k" x="-56" y="-216"/>
-<element name="RTD1:C7" library="rcl" package="C0603" value="1u" x="-55" y="-211"/>
-<element name="RTD1:R7" library="rcl" package="R0603" value="15k" x="-56" y="-221"/>
-<element name="RTD1:C4" library="rcl" package="C0603" value="1u" x="-55" y="-226"/>
+<element name="C201" library="resistor" package="C0603" value="100n" x="34" y="47" rot="R270"/>
+<element name="U201" library="Measurement Specialties" package="MS5611" value="" x="29" y="48"/>
+<element name="C101" library="rcl" package="C0603" value="10u" x="-3" y="-15"/>
+<element name="C102" library="rcl" package="C0805" value="10u" x="-3" y="-19"/>
+<element name="C103" library="rcl" package="C0805" value="10u" x="-3" y="-25"/>
+<element name="U$101" library="texas" package="VQFN15_2.5X3" value="TPS6307X" x="-11" y="-24"/>
+<element name="Q101" library="transistor-fet" package="TO252" value="IPD042P03L3G" x="-19" y="-20"/>
+<element name="Q102" library="transistor-fet" package="TO252" value="IPD042P03L3G" x="-31" y="-20"/>
+<element name="R101" library="rcl" package="R0603" value="" x="-35" y="-31"/>
+<element name="C104" library="rcl" package="C0603" value="" x="-33" y="-36"/>
+<element name="L101" library="inductor-coilcraft" package="B82462G4" value="B82462G4102M" x="-41" y="-31"/>
+<element name="R102" library="rcl" package="R0603" value="" x="-43" y="-40"/>
+<element name="C105" library="rcl" package="C0603" value="100n" x="-41" y="-45"/>
+<element name="R103" library="rcl" package="R0603" value="470k, 1%" x="-43" y="-50"/>
+<element name="R104" library="rcl" package="R0603" value="150k, 1%" x="-43" y="-55"/>
+<element name="R105" library="rcl" package="R0603" value="100k" x="-43" y="-60"/>
+<element name="R106" library="rcl" package="R0603" value="10k" x="-43" y="-65"/>
+<element name="C106" library="rcl" package="C0603" value="10u" x="-41" y="-70"/>
+<element name="C107" library="rcl" package="C0805" value="22u" x="-42" y="-76"/>
+<element name="C108" library="rcl" package="C0805" value="22u" x="-42" y="-83"/>
+<element name="C109" library="rcl" package="C0805" value="22u" x="-42" y="-90"/>
+<element name="C110" library="rcl" package="C0805" value="22u" x="-42" y="-97"/>
+<element name="C111" library="rcl" package="C0805" value="22u" x="-42" y="-104"/>
+<element name="U301" library="linear-technology" package="DFN10-2X3" value="" x="-40" y="-110"/>
+<element name="C301" library="rcl" package="C0805" value="2.2u" x="-42" y="-116"/>
+<element name="C302" library="rcl" package="C0805" value="1u" x="-42" y="-122"/>
+<element name="C303" library="rcl" package="C0603" value="1u" x="-41" y="-127"/>
+<element name="R301" library="resistor" package="R0603" value="10k" x="-43" y="-132"/>
+<element name="R302" library="resistor" package="R0603" value="100k" x="-43" y="-137"/>
+<element name="R303" library="resistor" package="R0603" value="12k" x="-43" y="-142"/>
+<element name="R304" library="resistor" package="R0603" value="10k" x="-43" y="-147"/>
+<element name="C304" library="rcl" package="C0603" value="1u" x="-41" y="-152"/>
+<element name="U$401" library="microchip" package="SOT23-6" value="MCP1501-18" x="-49" y="-151"/>
+<element name="C401" library="rcl" package="C0603" value="1u" x="-48" y="-157"/>
+<element name="C402" library="rcl" package="C0603" value="1u" x="-48" y="-166"/>
+<element name="R402" library="rcl" package="R0603" value="15k" x="-49" y="-171"/>
+<element name="U$402" library="maxim" package="UMAX8" value="MAX4377T" x="-55" y="-169"/>
+<element name="C403" library="rcl" package="C0603" value="1u" x="-55" y="-181"/>
+<element name="R404" library="rcl" package="R0603" value="15k" x="-56" y="-186"/>
+<element name="C405" library="rcl" package="C0603" value="1u" x="-55" y="-196"/>
+<element name="R405" library="rcl" package="R0603" value="15k" x="-56" y="-201"/>
+<element name="C406" library="rcl" package="C0603" value="1u" x="-55" y="-206"/>
+<element name="R406" library="rcl" package="R0603" value="15k" x="-56" y="-216"/>
+<element name="C407" library="rcl" package="C0603" value="1u" x="-55" y="-211"/>
+<element name="R407" library="rcl" package="R0603" value="15k" x="-56" y="-221"/>
+<element name="C404" library="rcl" package="C0603" value="1u" x="-55" y="-226"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2810,28 +2810,28 @@ design rules under a new name.</description>
 <wire x1="14" y1="62.565684375" x2="14" y2="69" width="0.13" layer="1"/>
 <wire x1="14" y1="69" x2="13.54" y2="69.46" width="0.13" layer="1"/>
 </signal>
-<signal name="M:GND">
-<contactref element="M:U1" pad="2"/>
-<contactref element="M:U1" pad="3"/>
-<contactref element="M:C1" pad="2"/>
+<signal name="MS5611:GND">
+<contactref element="U201" pad="2"/>
+<contactref element="U201" pad="3"/>
+<contactref element="C201" pad="2"/>
 <wire x1="29" y1="46.75" x2="34" y2="46.15" width="0" layer="19" extent="1-1"/>
 <wire x1="29" y1="45.5" x2="29" y2="46.75" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="M:+3V3">
-<contactref element="M:U1" pad="1"/>
-<contactref element="M:C1" pad="1"/>
+<signal name="MS5611:+3V3">
+<contactref element="U201" pad="1"/>
+<contactref element="C201" pad="1"/>
 <wire x1="34" y1="47.85" x2="33.56" y2="47.41" width="0.13" layer="1"/>
 <wire x1="33.56" y1="47.41" x2="30.11" y2="47.41" width="0.13" layer="1"/>
 <wire x1="30.11" y1="47.41" x2="29.52" y2="48" width="0.13" layer="1"/>
 <wire x1="29.52" y1="48" x2="29" y2="48" width="0.13" layer="1"/>
 </signal>
 <signal name="MS5611_SCLK">
-<contactref element="M:U1" pad="8"/>
+<contactref element="U201" pad="8"/>
 <wire x1="30" y1="49" x2="31" y2="48" width="0.13" layer="1"/>
 <wire x1="25.302940625" y1="49" x2="30" y2="49" width="0.13" layer="1"/>
 </signal>
 <signal name="MS5611_MISO">
-<contactref element="M:U1" pad="6"/>
+<contactref element="U201" pad="6"/>
 <wire x1="25.171571875" y1="48" x2="26" y2="48" width="0.13" layer="1"/>
 <via x="26" y="48" extent="1-16" drill="0.39"/>
 <wire x1="26" y1="48" x2="26" y2="45" width="0.13" layer="16"/>
@@ -2846,7 +2846,7 @@ design rules under a new name.</description>
 <wire x1="27" y1="43" x2="31.76" y2="43" width="0.13" layer="1"/>
 </signal>
 <signal name="MS5611_MOSI">
-<contactref element="M:U1" pad="7"/>
+<contactref element="U201" pad="7"/>
 <wire x1="30.03" y1="46.09" x2="30.03" y2="45" width="0.13" layer="1"/>
 <wire x1="30.03" y1="45" x2="29.9" y2="44.87" width="0.13" layer="1"/>
 <wire x1="30.03" y1="46.09" x2="30.69" y2="46.75" width="0.13" layer="1"/>
@@ -2854,19 +2854,19 @@ design rules under a new name.</description>
 <wire x1="27.170196875" y1="44.87" x2="29.9" y2="44.87" width="0.13" layer="1"/>
 </signal>
 <signal name="MS5611_CS">
-<contactref element="M:U1" pad="4"/>
-<contactref element="M:U1" pad="5"/>
+<contactref element="U201" pad="4"/>
+<contactref element="U201" pad="5"/>
 <wire x1="31" y1="44.25" x2="29" y2="44.25" width="0.13" layer="1"/>
 <wire x1="26.658828125" y1="44.25" x2="29" y2="44.25" width="0.13" layer="1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$1">
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$12"/>
-<contactref element="DCDC_REGULATOR1:Q2" pad="2"/>
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$13"/>
-<contactref element="DCDC_REGULATOR1:R6" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C3" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C2" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C1" pad="1"/>
+<contactref element="U$101" pad="P$12"/>
+<contactref element="Q102" pad="2"/>
+<contactref element="U$101" pad="P$13"/>
+<contactref element="R106" pad="2"/>
+<contactref element="C103" pad="1"/>
+<contactref element="C102" pad="1"/>
+<contactref element="C101" pad="1"/>
 <wire x1="-28.72" y1="-24.8" x2="-42.15" y2="-65" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.73" y1="-22.6" x2="-28.72" y2="-24.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.225" y1="-22.6" x2="-10.73" y2="-22.6" width="0" layer="19" extent="1-1"/>
@@ -2875,44 +2875,44 @@ design rules under a new name.</description>
 <wire x1="-3.85" y1="-15" x2="-3.95" y2="-19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$2">
-<contactref element="DCDC_REGULATOR1:Q1" pad="3"/>
-<contactref element="DCDC_REGULATOR1:Q2" pad="3"/>
-<contactref element="DCDC_REGULATOR1:Q1" pad="1"/>
-<contactref element="DCDC_REGULATOR1:R1" pad="2"/>
+<contactref element="Q101" pad="3"/>
+<contactref element="Q102" pad="3"/>
+<contactref element="Q101" pad="1"/>
+<contactref element="R101" pad="2"/>
 <wire x1="-31" y1="-17.5" x2="-34.15" y2="-31" width="0" layer="19" extent="1-1"/>
 <wire x1="-19" y1="-17.5" x2="-31" y2="-17.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.28" y1="-24.8" x2="-19" y2="-17.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$4">
-<contactref element="DCDC_REGULATOR1:Q2" pad="1"/>
-<contactref element="DCDC_REGULATOR1:R1" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C4" pad="1"/>
-<contactref element="DCDC_REGULATOR1:R2" pad="1"/>
+<contactref element="Q102" pad="1"/>
+<contactref element="R101" pad="1"/>
+<contactref element="C104" pad="1"/>
+<contactref element="R102" pad="1"/>
 <wire x1="-33.85" y1="-36" x2="-43.85" y2="-40" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.85" y1="-31" x2="-33.85" y2="-36" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.28" y1="-24.8" x2="-35.85" y2="-31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$3">
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$11"/>
-<contactref element="DCDC_REGULATOR1:L1" pad="P$1"/>
+<contactref element="U$101" pad="P$11"/>
+<contactref element="L101" pad="P$1"/>
 <wire x1="-10.225" y1="-23.5" x2="-43.75" y2="-31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$5">
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$9"/>
-<contactref element="DCDC_REGULATOR1:L1" pad="P$2"/>
+<contactref element="U$101" pad="P$9"/>
+<contactref element="L101" pad="P$2"/>
 <wire x1="-10.225" y1="-24.5" x2="-38.25" y2="-31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:3V3_OUT">
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$7"/>
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$8"/>
-<contactref element="DCDC_REGULATOR1:R3" pad="2"/>
-<contactref element="DCDC_REGULATOR1:R5" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C11" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C10" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C9" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C8" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C7" pad="1"/>
-<contactref element="DCDC_REGULATOR1:C6" pad="1"/>
+<contactref element="U$101" pad="P$7"/>
+<contactref element="U$101" pad="P$8"/>
+<contactref element="R103" pad="2"/>
+<contactref element="R105" pad="2"/>
+<contactref element="C111" pad="1"/>
+<contactref element="C110" pad="1"/>
+<contactref element="C109" pad="1"/>
+<contactref element="C108" pad="1"/>
+<contactref element="C107" pad="1"/>
+<contactref element="C106" pad="1"/>
 <wire x1="-42.95" y1="-97" x2="-42.95" y2="-104" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.95" y1="-90" x2="-42.95" y2="-97" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.95" y1="-83" x2="-42.95" y2="-90" width="0" layer="19" extent="1-1"/>
@@ -2924,44 +2924,44 @@ design rules under a new name.</description>
 <wire x1="-10.225" y1="-25.4" x2="-10.725" y2="-25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$7">
-<contactref element="DCDC_REGULATOR1:C5" pad="1"/>
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$3"/>
+<contactref element="C105" pad="1"/>
+<contactref element="U$101" pad="P$3"/>
 <wire x1="-12.15" y1="-24.25" x2="-41.85" y2="-45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$8">
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$10"/>
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$4"/>
+<contactref element="U$101" pad="P$10"/>
+<contactref element="U$101" pad="P$4"/>
 <wire x1="-12.15" y1="-24.75" x2="-10.4" y2="-24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$10">
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$5"/>
-<contactref element="DCDC_REGULATOR1:R3" pad="1"/>
-<contactref element="DCDC_REGULATOR1:R4" pad="2"/>
+<contactref element="U$101" pad="P$5"/>
+<contactref element="R103" pad="1"/>
+<contactref element="R104" pad="2"/>
 <wire x1="-43.85" y1="-50" x2="-42.15" y2="-55" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.725" y1="-25.4" x2="-43.85" y2="-50" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$9">
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$2"/>
-<contactref element="DCDC_REGULATOR1:R5" pad="1"/>
+<contactref element="U$101" pad="P$2"/>
+<contactref element="R105" pad="1"/>
 <wire x1="-12.15" y1="-23.75" x2="-43.85" y2="-60" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$11">
-<contactref element="DCDC_REGULATOR1:R6" pad="1"/>
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$1"/>
-<contactref element="DCDC_REGULATOR1:U$1" pad="P$14"/>
+<contactref element="R106" pad="1"/>
+<contactref element="U$101" pad="P$1"/>
+<contactref element="U$101" pad="P$14"/>
 <wire x1="-12.15" y1="-23.25" x2="-43.85" y2="-65" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.225" y1="-22.6" x2="-12.15" y2="-23.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:PWR_IN">
-<contactref element="DCDC_REGULATOR1:Q1" pad="2"/>
+<contactref element="Q101" pad="2"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$6">
-<contactref element="DCDC_REGULATOR1:C6" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C7" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C8" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C9" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C10" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C11" pad="2"/>
+<contactref element="C106" pad="2"/>
+<contactref element="C107" pad="2"/>
+<contactref element="C108" pad="2"/>
+<contactref element="C109" pad="2"/>
+<contactref element="C110" pad="2"/>
+<contactref element="C111" pad="2"/>
 <wire x1="-41.05" y1="-97" x2="-41.05" y2="-104" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.05" y1="-90" x2="-41.05" y2="-97" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.05" y1="-83" x2="-41.05" y2="-90" width="0" layer="19" extent="1-1"/>
@@ -2969,145 +2969,145 @@ design rules under a new name.</description>
 <wire x1="-40.15" y1="-70" x2="-41.05" y2="-76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DCDC_REGULATOR1:N$15">
-<contactref element="DCDC_REGULATOR1:C3" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C2" pad="2"/>
-<contactref element="DCDC_REGULATOR1:C1" pad="2"/>
+<contactref element="C103" pad="2"/>
+<contactref element="C102" pad="2"/>
+<contactref element="C101" pad="2"/>
 <wire x1="-2.05" y1="-19" x2="-2.05" y2="-25" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.15" y1="-15" x2="-2.05" y2="-19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:N$1">
-<contactref element="ORDNANCE1:U1" pad="P1"/>
-<contactref element="ORDNANCE1:C2" pad="1"/>
+<contactref element="U301" pad="P1"/>
+<contactref element="C302" pad="1"/>
 <wire x1="-42" y1="-111.85" x2="-42.95" y2="-122" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:N$2">
-<contactref element="ORDNANCE1:C2" pad="2"/>
-<contactref element="ORDNANCE1:U1" pad="P2"/>
+<contactref element="C302" pad="2"/>
+<contactref element="U301" pad="P2"/>
 <wire x1="-41.5" y1="-111.85" x2="-41.05" y2="-122" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:N$3">
-<contactref element="ORDNANCE1:U1" pad="P9"/>
-<contactref element="ORDNANCE1:C1" pad="1"/>
-<contactref element="ORDNANCE1:C3" pad="1"/>
-<contactref element="ORDNANCE1:R1" pad="2"/>
+<contactref element="U301" pad="P9"/>
+<contactref element="C301" pad="1"/>
+<contactref element="C303" pad="1"/>
+<contactref element="R301" pad="2"/>
 <wire x1="-41.85" y1="-127" x2="-42.15" y2="-132" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.95" y1="-116" x2="-41.85" y2="-127" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.5" y1="-110" x2="-42.95" y2="-116" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:N$4">
-<contactref element="ORDNANCE1:C3" pad="2"/>
-<contactref element="ORDNANCE1:C1" pad="2"/>
+<contactref element="C303" pad="2"/>
+<contactref element="C301" pad="2"/>
 <wire x1="-41.05" y1="-116" x2="-40.15" y2="-127" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:!SHDN">
-<contactref element="ORDNANCE1:U1" pad="P4"/>
+<contactref element="U301" pad="P4"/>
 </signal>
 <signal name="ORDNANCE1:N$5">
-<contactref element="ORDNANCE1:U1" pad="P6"/>
-<contactref element="ORDNANCE1:R1" pad="1"/>
+<contactref element="U301" pad="P6"/>
+<contactref element="R301" pad="1"/>
 <wire x1="-40" y1="-110" x2="-43.85" y2="-132" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:N$6">
-<contactref element="ORDNANCE1:U1" pad="P7"/>
-<contactref element="ORDNANCE1:R3" pad="2"/>
+<contactref element="U301" pad="P7"/>
+<contactref element="R303" pad="2"/>
 <wire x1="-40.5" y1="-110" x2="-42.15" y2="-142" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:N$7">
-<contactref element="ORDNANCE1:R3" pad="1"/>
+<contactref element="R303" pad="1"/>
 </signal>
 <signal name="ORDNANCE1:N$9">
-<contactref element="ORDNANCE1:U1" pad="P8"/>
-<contactref element="ORDNANCE1:U1" pad="P11"/>
+<contactref element="U301" pad="P8"/>
+<contactref element="U301" pad="P11"/>
 <wire x1="-41" y1="-110.925" x2="-41" y2="-110" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ORDNANCE1:N$10">
-<contactref element="ORDNANCE1:U1" pad="P3"/>
+<contactref element="U301" pad="P3"/>
 </signal>
 <signal name="ORDNANCE1:ORD_PWR">
-<contactref element="ORDNANCE1:U1" pad="P10"/>
+<contactref element="U301" pad="P10"/>
 </signal>
 <signal name="ORDNANCE1:N$8">
-<contactref element="ORDNANCE1:R4" pad="2"/>
-<contactref element="ORDNANCE1:U1" pad="P5"/>
-<contactref element="ORDNANCE1:R2" pad="1"/>
-<contactref element="ORDNANCE1:C4" pad="1"/>
+<contactref element="R304" pad="2"/>
+<contactref element="U301" pad="P5"/>
+<contactref element="R302" pad="1"/>
+<contactref element="C304" pad="1"/>
 <wire x1="-42.15" y1="-147" x2="-41.85" y2="-152" width="0" layer="19" extent="1-1"/>
 <wire x1="-43.85" y1="-137" x2="-42.15" y2="-147" width="0" layer="19" extent="1-1"/>
 <wire x1="-40" y1="-111.85" x2="-43.85" y2="-137" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$1">
-<contactref element="RTD1:U$1" pad="1"/>
-<contactref element="RTD1:R2" pad="2"/>
-<contactref element="RTD1:C2" pad="1"/>
+<contactref element="U$401" pad="1"/>
+<contactref element="R402" pad="2"/>
+<contactref element="C402" pad="1"/>
 <wire x1="-48.85" y1="-166" x2="-48.15" y2="-171" width="0" layer="19" extent="1-1"/>
 <wire x1="-49.95" y1="-152.15" x2="-48.85" y2="-166" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$2">
-<contactref element="RTD1:C1" pad="1"/>
-<contactref element="RTD1:U$1" pad="6"/>
+<contactref element="C401" pad="1"/>
+<contactref element="U$401" pad="6"/>
 <wire x1="-49.95" y1="-149.85" x2="-48.85" y2="-157" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$3">
-<contactref element="RTD1:U$1" pad="2"/>
-<contactref element="RTD1:U$1" pad="3"/>
+<contactref element="U$401" pad="2"/>
+<contactref element="U$401" pad="3"/>
 <wire x1="-48.05" y1="-152.15" x2="-49" y2="-152.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$4">
-<contactref element="RTD1:U$1" pad="5"/>
+<contactref element="U$401" pad="5"/>
 </signal>
 <signal name="RTD1:GND">
-<contactref element="RTD1:U$2" pad="4"/>
+<contactref element="U$402" pad="4"/>
 </signal>
 <signal name="RTD1:S2–">
-<contactref element="RTD1:U$2" pad="6"/>
+<contactref element="U$402" pad="6"/>
 </signal>
 <signal name="RTD1:S1–">
-<contactref element="RTD1:U$2" pad="2"/>
+<contactref element="U$402" pad="2"/>
 </signal>
 <signal name="RTD1:N$7">
-<contactref element="RTD1:U$2" pad="1"/>
-<contactref element="RTD1:R4" pad="2"/>
+<contactref element="U$402" pad="1"/>
+<contactref element="R404" pad="2"/>
 <wire x1="-55.975" y1="-171.175" x2="-55.15" y2="-186" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$8">
-<contactref element="RTD1:R4" pad="1"/>
-<contactref element="RTD1:R5" pad="2"/>
-<contactref element="RTD1:C3" pad="1"/>
+<contactref element="R404" pad="1"/>
+<contactref element="R405" pad="2"/>
+<contactref element="C403" pad="1"/>
 <wire x1="-55.85" y1="-181" x2="-56.85" y2="-186" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.15" y1="-201" x2="-56.85" y2="-186" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$9">
-<contactref element="RTD1:R5" pad="1"/>
-<contactref element="RTD1:C4" pad="1"/>
+<contactref element="R405" pad="1"/>
+<contactref element="C404" pad="1"/>
 <wire x1="-56.85" y1="-201" x2="-55.85" y2="-226" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$10">
-<contactref element="RTD1:U$2" pad="7"/>
-<contactref element="RTD1:R6" pad="2"/>
+<contactref element="U$402" pad="7"/>
+<contactref element="R406" pad="2"/>
 <wire x1="-55.15" y1="-216" x2="-55.325" y2="-166.825" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$11">
-<contactref element="RTD1:R6" pad="1"/>
-<contactref element="RTD1:R7" pad="2"/>
-<contactref element="RTD1:C6" pad="1"/>
+<contactref element="R406" pad="1"/>
+<contactref element="R407" pad="2"/>
+<contactref element="C406" pad="1"/>
 <wire x1="-56.85" y1="-216" x2="-55.15" y2="-221" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.85" y1="-206" x2="-56.85" y2="-216" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$12">
-<contactref element="RTD1:R7" pad="1"/>
-<contactref element="RTD1:C7" pad="1"/>
+<contactref element="R407" pad="1"/>
+<contactref element="C407" pad="1"/>
 <wire x1="-55.85" y1="-211" x2="-56.85" y2="-221" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:N$13">
-<contactref element="RTD1:C5" pad="2"/>
-<contactref element="RTD1:U$2" pad="8"/>
+<contactref element="C405" pad="2"/>
+<contactref element="U$402" pad="8"/>
 <wire x1="-55.975" y1="-166.825" x2="-54.15" y2="-196" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTD1:S1+">
-<contactref element="RTD1:U$2" pad="3"/>
+<contactref element="U$402" pad="3"/>
 </signal>
 <signal name="RTD1:S2+">
-<contactref element="RTD1:U$2" pad="5"/>
+<contactref element="U$402" pad="5"/>
 </signal>
 <signal name="N$1" class="1">
 <polygon width="0.13" layer="1">
