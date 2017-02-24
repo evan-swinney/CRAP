@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12202,6 +12202,55 @@ Based on the following sources :
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A3L-LOC">
+<wire x1="288.29" y1="3.81" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="3.81" x2="373.38" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="3.81" x2="383.54" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="3.81" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="8.89" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="13.97" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="19.05" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="288.29" y1="3.81" x2="288.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="288.29" y1="24.13" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="24.13" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="3.81" x2="373.38" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="8.89" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="373.38" y1="8.89" x2="342.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="8.89" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="8.89" x2="342.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="13.97" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="13.97" x2="342.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="19.05" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="342.265" y1="19.05" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="344.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="344.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="357.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A3L-LOC" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A3, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A3L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12216,7 +12265,7 @@ Based on the following sources :
 </class>
 </classes>
 <modules>
-<module name="MS5611" prefix="M" dx="30.48" dy="20.32">
+<module name="MS5611" prefix="M" dx="30.48" dy="15.24">
 <ports>
 <port name="SCLK" side="left" coord="5.08" direction="in"/>
 <port name="MISO" side="left" coord="2.54" direction="out"/>
@@ -12232,6 +12281,7 @@ Based on the following sources :
 <part name="C1" library="resistor" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12242,6 +12292,7 @@ Based on the following sources :
 <instance part="C1" gate="G$1" x="-38.1" y="0"/>
 <instance part="GND1" gate="1" x="-38.1" y="-10.16"/>
 <instance part="+3V1" gate="G$1" x="-38.1" y="7.62"/>
+<instance part="FRAME1" gate="G$1" x="-205.74" y="-129.54"/>
 </instances>
 <busses>
 </busses>
@@ -12341,6 +12392,7 @@ Based on the following sources :
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12410,6 +12462,7 @@ ground.</text>
 <instance part="C9" gate="G$1" x="93.98" y="7.62"/>
 <instance part="C10" gate="G$1" x="101.6" y="7.62"/>
 <instance part="C11" gate="G$1" x="109.22" y="7.62"/>
+<instance part="FRAME1" gate="G$1" x="-213.36" y="-121.92"/>
 </instances>
 <busses>
 </busses>
@@ -12648,12 +12701,14 @@ ground.</text>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -12677,6 +12732,7 @@ ground.</text>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="12k"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12709,6 +12765,7 @@ limit to 0.3A</text>
 <attribute name="VALUE" x="39.37" y="-13.462" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="30.48" y="-15.24"/>
+<instance part="FRAME1" gate="G$1" x="-180.34" y="-111.76"/>
 </instances>
 <busses>
 </busses>
@@ -12841,6 +12898,7 @@ limit to 0.3A</text>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="15k"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12889,6 +12947,7 @@ external 4-wire RTD</text>
 <attribute name="VALUE" x="87.63" y="-51.562" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="99.06" y="-30.48"/>
+<instance part="FRAME1" gate="G$1" x="-104.14" y="-129.54"/>
 </instances>
 <busses>
 </busses>
@@ -13183,39 +13242,6 @@ external 4-wire RTD</text>
 <wire x1="35.56" y1="40.64" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<text x="0" y="2.54" size="1.778" layer="91">Power Design Sheet</text>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<text x="0" y="2.54" size="1.778" layer="91">Accelerometer(s) Sheet</text>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<text x="0" y="2.54" size="1.778" layer="91">Tempurature Sensing Sheet</text>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 </sheets>

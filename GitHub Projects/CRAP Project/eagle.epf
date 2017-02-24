@@ -355,18 +355,12 @@ UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/zetex.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/zilog.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="0 0 1919 1016"
-State=1
-Number=0
-
-[Win_2]
 Type="Board Editor"
-Loc="0 0 1919 1016"
+Loc="2552 344 4471 1360"
 State=1
 Number=2
 File="Flight Controller.brd"
-View="25.2966 23.6915 47.7036 71.3353"
+View="19.2472 -35.3507 99.5356 135.366"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -406,7 +400,13 @@ AddLevel=2
 PadsSameType=0
 Layer=16
 
+[Win_2]
+Type="Control Panel"
+Loc="0 0 2559 1376"
+State=1
+Number=0
+
 [Desktop]
-Screen="1920 1080"
+Screen="4480 1440"
 Window="Win_1"
 Window="Win_2"

@@ -21,6 +21,7 @@ UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/Atmel_By_element14_Batch_1
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/CRAP Parts.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/FTDI_By_element14_Batch_1.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/IQD-Frequency-Products.lbr"
+UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/InvenSense.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/LTC_By_element14_Batch_1.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/Measurement Specialties.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/Texas Instruments_By_element14_Batch_1.lbr"
@@ -352,11 +353,10 @@ UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/zetex.lbr"
 UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/zilog.lbr"
-UsedLibrary="C:/Users/evans/Documents/GitHub/CRAP/lbr/InvenSense.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="-8 -8 2551 1368"
+Loc="0 0 2559 1376"
 State=1
 Number=0
 
