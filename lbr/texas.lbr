@@ -24206,21 +24206,21 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <text x="2.5" y="-2" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="VQFN15_2.5X3">
-<smd name="P$10" x="0.6" y="0" dx="0.25" dy="1.7" layer="1" roundness="25" rot="R90"/>
-<smd name="P$9" x="0.775" y="-0.5" dx="0.25" dy="1.35" layer="1" roundness="25" rot="R90"/>
-<smd name="P$11" x="0.775" y="0.5" dx="0.25" dy="1.35" layer="1" roundness="25" rot="R90"/>
-<smd name="P$2" x="-1.15" y="0.25" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
-<smd name="P$1" x="-1.15" y="0.75" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
-<smd name="P$3" x="-1.15" y="-0.25" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
-<smd name="P$4" x="-1.15" y="-0.75" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
-<smd name="P$15" x="-0.725" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
-<smd name="P$14" x="-0.225" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
-<smd name="P$5" x="-0.725" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
-<smd name="P$6" x="-0.225" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
-<smd name="P$12" x="0.775" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
-<smd name="P$13" x="0.27" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
-<smd name="P$7" x="0.275" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
-<smd name="P$8" x="0.775" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P10" x="0.6" y="0" dx="0.25" dy="1.7" layer="1" roundness="25" rot="R90"/>
+<smd name="P9" x="0.775" y="-0.5" dx="0.25" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="P11" x="0.775" y="0.5" dx="0.25" dy="1.35" layer="1" roundness="25" rot="R90"/>
+<smd name="P2" x="-1.15" y="0.25" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
+<smd name="P1" x="-1.15" y="0.75" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
+<smd name="P3" x="-1.15" y="-0.25" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
+<smd name="P4" x="-1.15" y="-0.75" dx="0.25" dy="0.6" layer="1" roundness="25" rot="R90"/>
+<smd name="P15" x="-0.725" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P14" x="-0.225" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P5" x="-0.725" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P6" x="-0.225" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P12" x="0.775" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P13" x="0.27" y="1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P7" x="0.275" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
+<smd name="P8" x="0.775" y="-1.4" dx="0.25" dy="0.6" layer="1" roundness="25"/>
 <rectangle x1="0.15" y1="-1.35" x2="0.9" y2="-1.1" layer="1"/>
 <rectangle x1="0.15" y1="1.1" x2="0.9" y2="1.35" layer="1"/>
 <wire x1="-1.8" y1="2" x2="-1.3" y2="2" width="0.127" layer="21"/>
@@ -24232,6 +24232,20 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <wire x1="-1.3" y1="2" x2="-1.8" y2="1.4" width="0.127" layer="21"/>
 <text x="-1.9" y="2.2" size="1.27" layer="25">&gt;Name</text>
 <text x="-1.9" y="-3.5" size="1.27" layer="25">&gt;Value</text>
+<polygon width="0.127" layer="29">
+<vertex x="0.1" y="1.7"/>
+<vertex x="0.9" y="1.7"/>
+<vertex x="1" y="1.7"/>
+<vertex x="1" y="1.1"/>
+<vertex x="0.1" y="1.1"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.1" y="-1.1"/>
+<vertex x="1" y="-1.1"/>
+<vertex x="1" y="-1.7"/>
+<vertex x="1" y="-1.8"/>
+<vertex x="0.1" y="-1.8"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -48669,21 +48683,21 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <devices>
 <device name="" package="VQFN15_2.5X3">
 <connects>
-<connect gate="G$1" pin="EN" pad="P$14"/>
-<connect gate="G$1" pin="FB" pad="P$5"/>
-<connect gate="G$1" pin="FB2" pad="P$6"/>
-<connect gate="G$1" pin="GND" pad="P$4"/>
-<connect gate="G$1" pin="L1" pad="P$11"/>
-<connect gate="G$1" pin="L2" pad="P$9"/>
-<connect gate="G$1" pin="PG" pad="P$2"/>
-<connect gate="G$1" pin="PGND" pad="P$10"/>
-<connect gate="G$1" pin="PS/SYNC" pad="P$1"/>
-<connect gate="G$1" pin="VAUX" pad="P$3"/>
-<connect gate="G$1" pin="VIN@1" pad="P$12"/>
-<connect gate="G$1" pin="VIN@2" pad="P$13"/>
-<connect gate="G$1" pin="VOUT@1" pad="P$7"/>
-<connect gate="G$1" pin="VOUT@2" pad="P$8"/>
-<connect gate="G$1" pin="VSEL" pad="P$15"/>
+<connect gate="G$1" pin="EN" pad="P14"/>
+<connect gate="G$1" pin="FB" pad="P5"/>
+<connect gate="G$1" pin="FB2" pad="P6"/>
+<connect gate="G$1" pin="GND" pad="P4"/>
+<connect gate="G$1" pin="L1" pad="P11"/>
+<connect gate="G$1" pin="L2" pad="P9"/>
+<connect gate="G$1" pin="PG" pad="P2"/>
+<connect gate="G$1" pin="PGND" pad="P10"/>
+<connect gate="G$1" pin="PS/SYNC" pad="P1"/>
+<connect gate="G$1" pin="VAUX" pad="P3"/>
+<connect gate="G$1" pin="VIN@1" pad="P12"/>
+<connect gate="G$1" pin="VIN@2" pad="P13"/>
+<connect gate="G$1" pin="VOUT@1" pad="P7"/>
+<connect gate="G$1" pin="VOUT@2" pad="P8"/>
+<connect gate="G$1" pin="VSEL" pad="P15"/>
 </connects>
 <technologies>
 <technology name=""/>
