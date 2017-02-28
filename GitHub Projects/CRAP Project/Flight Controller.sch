@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13748,6 +13748,116 @@ TS-003</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="InvenSense">
+<packages>
+<package name="QFN-24">
+<description>3x3x1mm QFN-24 No lead package</description>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<smd name="21" x="0.2" y="1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="22" x="-0.2" y="1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="20" x="0.6" y="1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="23" x="-0.6" y="1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="19" x="1" y="1.4" dx="0.2" dy="0.4" layer="1" roundness="75"/>
+<smd name="24" x="-1" y="1.4" dx="0.2" dy="0.4" layer="1" roundness="75"/>
+<smd name="15" x="1.4" y="-0.2" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="16" x="1.4" y="0.2" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="17" x="1.4" y="0.6" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="14" x="1.4" y="-0.6" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="1.4" y="-1" dx="0.2" dy="0.4" layer="1" roundness="75" rot="R90"/>
+<smd name="18" x="1.4" y="1" dx="0.2" dy="0.4" layer="1" roundness="75" rot="R90"/>
+<smd name="10" x="0.2" y="-1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="9" x="-0.2" y="-1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="11" x="0.6" y="-1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="8" x="-0.6" y="-1.4" dx="0.2" dy="0.4" layer="1" roundness="25"/>
+<smd name="12" x="1" y="-1.4" dx="0.2" dy="0.4" layer="1" roundness="75"/>
+<smd name="7" x="-1" y="-1.4" dx="0.2" dy="0.4" layer="1" roundness="75"/>
+<smd name="3" x="-1.4" y="0.2" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="4" x="-1.4" y="-0.2" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="2" x="-1.4" y="0.6" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="5" x="-1.4" y="-0.6" dx="0.2" dy="0.4" layer="1" roundness="25" rot="R90"/>
+<smd name="1" x="-1.4" y="1" dx="0.2" dy="0.4" layer="1" roundness="75" rot="R90"/>
+<smd name="6" x="-1.4" y="-1" dx="0.2" dy="0.4" layer="1" roundness="75" rot="R90"/>
+<smd name="PAD" x="0" y="0" dx="1.54" dy="1.7" layer="1" roundness="25" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MPU-9250">
+<pin name="RESV" x="-22.86" y="15.24" length="middle" direction="pwr"/>
+<pin name="NC@1" x="-22.86" y="12.7" length="middle" direction="nc"/>
+<pin name="NC@2" x="-22.86" y="10.16" length="middle" direction="nc"/>
+<pin name="NC@3" x="-22.86" y="7.62" length="middle" direction="nc"/>
+<pin name="NC@4" x="-22.86" y="5.08" length="middle" direction="nc"/>
+<pin name="NC@5" x="-22.86" y="2.54" length="middle" direction="nc"/>
+<pin name="AUX_CL" x="-22.86" y="0" length="middle"/>
+<pin name="VDDIO" x="-22.86" y="-2.54" length="middle" direction="pwr"/>
+<pin name="AD0/SDO" x="-22.86" y="-5.08" length="middle"/>
+<pin name="REGOUT" x="-22.86" y="-7.62" length="middle" direction="pwr"/>
+<pin name="FSYNC" x="-22.86" y="-10.16" length="middle"/>
+<pin name="INT" x="-22.86" y="-12.7" length="middle"/>
+<pin name="VDD" x="22.86" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC@6" x="22.86" y="12.7" length="middle" direction="nc" rot="R180"/>
+<pin name="NC@7" x="22.86" y="10.16" length="middle" direction="nc" rot="R180"/>
+<pin name="NC@8" x="22.86" y="7.62" length="middle" direction="nc" rot="R180"/>
+<pin name="NC@9" x="22.86" y="5.08" length="middle" direction="nc" rot="R180"/>
+<pin name="GND" x="22.86" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="RESV/NC" x="22.86" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="RESV/GND" x="22.86" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="AUX_DA" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="CS" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="SCL/SCLK" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="SDA/SDI" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="20.32" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<text x="-17.78" y="22.86" size="1.27" layer="94">&gt;value</text>
+<text x="-17.78" y="-20.32" size="1.27" layer="94">&gt;name</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPU-9250" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MPU-9250" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-24">
+<connects>
+<connect gate="G$1" pin="AD0/SDO" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="21"/>
+<connect gate="G$1" pin="CS" pad="22"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="NC@1" pad="2"/>
+<connect gate="G$1" pin="NC@2" pad="3"/>
+<connect gate="G$1" pin="NC@3" pad="4"/>
+<connect gate="G$1" pin="NC@4" pad="5"/>
+<connect gate="G$1" pin="NC@5" pad="6"/>
+<connect gate="G$1" pin="NC@6" pad="14"/>
+<connect gate="G$1" pin="NC@7" pad="15"/>
+<connect gate="G$1" pin="NC@8" pad="16"/>
+<connect gate="G$1" pin="NC@9" pad="17"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV" pad="1"/>
+<connect gate="G$1" pin="RESV/GND" pad="20"/>
+<connect gate="G$1" pin="RESV/NC" pad="19"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
+<connect gate="G$1" pin="SDA/SDI" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VDDIO" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15051,12 +15161,14 @@ Cooper Barry</text>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -15078,12 +15190,16 @@ Cooper Barry</text>
 <variantdefs>
 </variantdefs>
 <parts>
+<part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
+<part name="U1" library="InvenSense" deviceset="MPU-9250" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="U1" gate="G$1" x="180.34" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -15137,7 +15253,6 @@ Cooper Barry</text>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="J5" library="CRAP Parts" deviceset="4POS_SCREWTERM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15249,7 +15364,6 @@ the firing chain number.</text>
 <instance part="GND13" gate="1" x="-215.9" y="-130.81"/>
 <instance part="GND14" gate="1" x="-146.05" y="35.56"/>
 <instance part="+3V14" gate="G$1" x="-147.32" y="78.74"/>
-<instance part="J5" gate="G$1" x="-254" y="-129.54"/>
 </instances>
 <busses>
 </busses>
