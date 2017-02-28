@@ -13858,6 +13858,112 @@ TS-003</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="micron">
+<description>&lt;b&gt;Micron&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOP16">
+<description>&lt;b&gt;SMALL OUTLINE PACKAGE&lt;/b&gt;</description>
+<wire x1="5.625" y1="3.01" x2="5.625" y2="-3.01" width="0.2032" layer="21"/>
+<wire x1="-5.605" y1="-3.01" x2="-5.605" y2="3.01" width="0.2032" layer="21"/>
+<wire x1="5.625" y1="-3.01" x2="-5.605" y2="-3.01" width="0.2032" layer="21"/>
+<wire x1="-5.605" y1="3.01" x2="5.625" y2="3.01" width="0.2032" layer="21"/>
+<smd name="1" x="-4.445" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-3.175" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-1.905" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-0.635" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="0.635" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="1.905" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="3.175" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="4.445" y="-4.87" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="4.445" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="3.175" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="1.905" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="0.635" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="-0.635" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="-1.905" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<smd name="15" x="-3.175" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<smd name="16" x="-4.445" y="4.743" dx="0.6" dy="2.2" layer="1"/>
+<text x="-4.175" y="-1.7851" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.175" y="0.5151" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-4.6949" y1="-5.7099" x2="-4.1951" y2="-4.38" layer="51"/>
+<rectangle x1="-3.4249" y1="-5.7099" x2="-2.9251" y2="-4.38" layer="51"/>
+<rectangle x1="-2.1549" y1="-5.7099" x2="-1.6551" y2="-4.38" layer="51"/>
+<rectangle x1="-0.8849" y1="-5.7099" x2="-0.3851" y2="-4.38" layer="51"/>
+<rectangle x1="0.3851" y1="-5.7099" x2="0.8849" y2="-4.38" layer="51"/>
+<rectangle x1="1.6551" y1="-5.7099" x2="2.1549" y2="-4.38" layer="51"/>
+<rectangle x1="2.9251" y1="-5.7099" x2="3.4249" y2="-4.38" layer="51"/>
+<rectangle x1="4.1951" y1="-5.7099" x2="4.6949" y2="-4.38" layer="51"/>
+<rectangle x1="4.1951" y1="4.253" x2="4.6949" y2="5.5829" layer="51"/>
+<rectangle x1="2.9251" y1="4.253" x2="3.4249" y2="5.5829" layer="51"/>
+<rectangle x1="1.6551" y1="4.253" x2="2.1549" y2="5.5829" layer="51"/>
+<rectangle x1="0.3851" y1="4.253" x2="0.8849" y2="5.5829" layer="51"/>
+<rectangle x1="-0.8849" y1="4.253" x2="-0.3851" y2="5.5829" layer="51"/>
+<rectangle x1="-2.1549" y1="4.253" x2="-1.6551" y2="5.5829" layer="51"/>
+<rectangle x1="-3.4249" y1="4.253" x2="-2.9251" y2="5.5829" layer="51"/>
+<rectangle x1="-4.6949" y1="4.253" x2="-4.1951" y2="5.5829" layer="51"/>
+<circle x="-5.08" y="-2.54" radius="0.254" width="0.508" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MT29F1G01">
+<pin name="!HOLD!/IO3" x="-20.32" y="10.16" length="middle"/>
+<pin name="VCC" x="-20.32" y="7.62" length="middle" direction="pwr"/>
+<pin name="DNC@1" x="-20.32" y="5.08" length="middle" direction="nc"/>
+<pin name="DNC@2" x="-20.32" y="2.54" length="middle" direction="nc"/>
+<pin name="DNC@3" x="-20.32" y="0" length="middle" direction="nc"/>
+<pin name="DNC@4" x="-20.32" y="-2.54" length="middle" direction="nc"/>
+<pin name="!CS" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SO/IO1" x="-20.32" y="-7.62" length="middle"/>
+<pin name="SCK" x="20.32" y="10.16" length="middle" direction="in" rot="R180"/>
+<pin name="SI/IO0" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="DNC@8" x="20.32" y="5.08" length="middle" direction="nc" rot="R180"/>
+<pin name="DNC@7" x="20.32" y="2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="DNC@6" x="20.32" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="DNC@5" x="20.32" y="-2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="GND" x="20.32" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="!WP!/IO2" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="15.24" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<text x="-15.24" y="17.78" size="1.27" layer="95" align="center-left">&gt;name</text>
+<text x="-15.24" y="-15.24" size="1.27" layer="96" align="center-left">&gt;value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MT29F1G01" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MT29F1G01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP16">
+<connects>
+<connect gate="G$1" pin="!CS" pad="7"/>
+<connect gate="G$1" pin="!HOLD!/IO3" pad="1"/>
+<connect gate="G$1" pin="!WP!/IO2" pad="9"/>
+<connect gate="G$1" pin="DNC@1" pad="3"/>
+<connect gate="G$1" pin="DNC@2" pad="4"/>
+<connect gate="G$1" pin="DNC@3" pad="5"/>
+<connect gate="G$1" pin="DNC@4" pad="6"/>
+<connect gate="G$1" pin="DNC@5" pad="11"/>
+<connect gate="G$1" pin="DNC@6" pad="12"/>
+<connect gate="G$1" pin="DNC@7" pad="13"/>
+<connect gate="G$1" pin="DNC@8" pad="14"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="SCK" pad="16"/>
+<connect gate="G$1" pin="SI/IO0" pad="15"/>
+<connect gate="G$1" pin="SO/IO1" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13893,6 +13999,8 @@ TS-003</description>
 <sheets>
 <sheet>
 <plain>
+<text x="88.9" y="-114.3" size="1.778" layer="97">MS5611 Module
+Evan Swinney</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0"/>
@@ -14010,31 +14118,31 @@ TS-003</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-68.58" y="20.32" size="1.778" layer="91">The input and output capacitors
+<text x="-68.58" y="20.32" size="1.778" layer="97">The input and output capacitors
 are not of the same physical
 size! Place the 0603 nearest 
 to the chip.</text>
-<text x="-104.14" y="-30.48" size="1.778" layer="91">RBF goes here connecting
+<text x="-104.14" y="-30.48" size="1.778" layer="97">RBF goes here connecting
 the MOSFET gate to ground
 via the resistor.</text>
-<text x="78.74" y="15.24" size="1.778" layer="91">Place the 10uF, 0603
+<text x="78.74" y="15.24" size="1.778" layer="97">Place the 10uF, 0603
 as close to the chip
 as possible</text>
-<text x="-200.66" y="10.16" size="1.778" layer="91">Header connections are not
+<text x="-200.66" y="10.16" size="1.778" layer="97">Header connections are not
 inside this module on purpose</text>
-<text x="10.16" y="-43.18" size="1.778" layer="91">FB2 is indeed going to GND</text>
-<text x="-66.04" y="-35.56" size="1.778" layer="91">NOTE TO THE ROUTER
+<text x="10.16" y="-43.18" size="1.778" layer="97">FB2 is indeed going to GND</text>
+<text x="-66.04" y="-35.56" size="1.778" layer="97">NOTE TO THE ROUTER
 The configuration of the wires
 for EN and PS is how it should
 be routed. I.e., nothing should
 be between the final 0603
 capacitor and the chip.
 See figure 8 of the datasheet.</text>
-<text x="-17.78" y="-33.02" size="1.778" layer="91">VSEL can go straight to ground
+<text x="-17.78" y="-33.02" size="1.778" layer="97">VSEL can go straight to ground
 without a pulldown according
 to figure 8 of the datasheet.</text>
-<text x="-152.4" y="25.4" size="1.778" layer="91">Reverse current protection</text>
-<text x="-109.22" y="22.86" size="1.778" layer="91">RBF power on/off</text>
+<text x="-152.4" y="25.4" size="1.778" layer="97">Reverse current protection</text>
+<text x="-109.22" y="22.86" size="1.778" layer="97">RBF power on/off</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="-40.64" y="7.62"/>
@@ -14350,6 +14458,13 @@ to figure 8 of the datasheet.</text>
 <wire x1="-106.68" y1="-17.78" x2="-106.68" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$8" class="0">
+<segment>
+<wire x1="-40.64" y1="-15.24" x2="-33.02" y2="0" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="0" x2="-32.766" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="0" x2="-35.306" y2="-1.27" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -14384,16 +14499,16 @@ to figure 8 of the datasheet.</text>
 <sheets>
 <sheet>
 <plain>
-<text x="328.93" y="168.91" size="1.778" layer="91">Ordnance connections outside of
+<text x="328.93" y="168.91" size="1.778" layer="97">Ordnance connections outside of
 the firing chain, so we can use
 more than a 2-terminal block.</text>
-<text x="170.18" y="177.8" size="1.778" layer="91">Power in after diode array
+<text x="170.18" y="177.8" size="1.778" layer="97">Power in after diode array
 from super capacitors</text>
-<text x="147.32" y="201.93" size="1.778" layer="91">!CONT_EN
+<text x="147.32" y="201.93" size="1.778" layer="97">!CONT_EN
 Continuity Enable command</text>
-<text x="170.18" y="165.1" size="1.778" layer="91">CONT_STAT
+<text x="170.18" y="165.1" size="1.778" layer="97">CONT_STAT
 Continuity Status</text>
-<text x="33.02" y="63.5" size="1.778" layer="91">DESCRIPTION OF MODULE PINS
+<text x="33.02" y="63.5" size="1.778" layer="97">DESCRIPTION OF MODULE PINS
 ~CONT_EN: Enable pin to trigger continuity
      check operation
 CONT_STAT: Status of continuity check
@@ -14403,7 +14518,7 @@ ORD_PWR: Firing chain power (from
 3V3: Power to run digital I/O
 FIRE1: Upper NFET firing command
 FIRE2: Lower NFET firing command</text>
-<text x="217.17" y="191.77" size="1.778" layer="91">Still need to place a diode here</text>
+<text x="217.17" y="191.77" size="1.778" layer="97">Still need to place a diode here</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -14560,13 +14675,13 @@ FIRE2: Lower NFET firing command</text>
 <sheets>
 <sheet>
 <plain>
-<text x="-59.69" y="-1.27" size="1.778" layer="91">Sets current input
+<text x="-59.69" y="-1.27" size="1.778" layer="97">Sets current input
 limit to 0.3A</text>
-<text x="109.22" y="-93.98" size="1.778" layer="91">Ordnance Charging and Power Circuit
+<text x="109.22" y="-93.98" size="1.778" layer="97">Ordnance Charging and Power Circuit
 Cooper Barry</text>
 <text x="-34.29" y="57.15" size="1.778" layer="91">LTC3225</text>
-<text x="106.68" y="0" size="1.778" layer="91">LED indicates caps are charged</text>
-<text x="6.35" y="52.07" size="1.778" layer="91">Need two 100 uF caps
+<text x="106.68" y="0" size="1.778" layer="97">LED indicates caps are charged</text>
+<text x="6.35" y="52.07" size="1.778" layer="97">Need two 100 uF caps
 in parallel if only using
 one super capacitor</text>
 </plain>
@@ -14774,27 +14889,27 @@ one super capacitor</text>
 <sheets>
 <sheet>
 <plain>
-<text x="114.3" y="27.94" size="1.778" layer="91">Why 3 resistors in parallel? A 400R resistor
+<text x="114.3" y="27.94" size="1.778" layer="97">Why 3 resistors in parallel? A 400R resistor
 is not cheap, and 1.2k is a standard value
 in the E12 series. Also, the accuracy of the
 temperature is dependent on the accuracy
 of this set resistor, and 3 in parallel reduces
 the tolerance by 3x.</text>
-<text x="111.76" y="7.62" size="1.778" layer="91">NOTE TO THE ROUTER:
+<text x="111.76" y="7.62" size="1.778" layer="97">NOTE TO THE ROUTER:
 Wire these as Kelvin connections
 where the REFIN pins are the
 sensing terminals!</text>
-<text x="81.28" y="27.94" size="1.778" layer="91">The 10 M resistor is for fault
+<text x="81.28" y="27.94" size="1.778" layer="97">The 10 M resistor is for fault
 detection if one of the RTD
 wires breaks.</text>
-<text x="142.24" y="-25.4" size="1.778" layer="91">NOTE TO ROUTER:
+<text x="142.24" y="-25.4" size="1.778" layer="97">NOTE TO ROUTER:
 Put the following silkscreen
 text next to each pin:
 4: EXC+
 3: S+
 2: S–
 1: EXC–</text>
-<text x="185.42" y="-111.76" size="1.778" layer="91">RTD Sensing Circuit
+<text x="185.42" y="-111.76" size="1.778" layer="97">RTD Sensing Circuit
 Cooper Barry</text>
 </plain>
 <instances>
@@ -15109,6 +15224,11 @@ Cooper Barry</text>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
+<part name="U1" library="micron" deviceset="MT29F1G01" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -15116,10 +15236,39 @@ Cooper Barry</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="U1" gate="G$1" x="190.5" y="127"/>
+<instance part="GND1" gate="1" x="215.9" y="111.76"/>
+<instance part="GND2" gate="1" x="134.62" y="119.38"/>
+<instance part="+3V1" gate="G$1" x="129.54" y="137.16"/>
+<instance part="C1" gate="G$1" x="134.62" y="129.54"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="134.62" y1="121.92" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="210.82" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="121.92" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="129.54" y1="134.62" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="134.62" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="132.08" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
+<junction x="134.62" y="134.62"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -15261,18 +15410,18 @@ Cooper Barry</text>
 <text x="260.35" y="-186.436" size="2.54" layer="94">1</text>
 <text x="166.37" y="-171.196" size="2.54" layer="94">Created by members of the CRAP team
 Space Hardware Club</text>
-<text x="-261.62" y="99.06" size="1.778" layer="91">NOTE TO ROUTER:
+<text x="-261.62" y="99.06" size="1.778" layer="97">NOTE TO ROUTER:
 Put the following silkscreen
 text next to each pin:
 1: EXC+
 2: S+
 3: S–
 4: EXC–</text>
-<text x="-165.1" y="114.3" size="1.778" layer="91">This is SPI and not I2C</text>
-<text x="-125.73" y="13.97" size="1.778" layer="91" rot="MR0">Question from Cooper:
+<text x="-165.1" y="114.3" size="1.778" layer="97">This is SPI and not I2C</text>
+<text x="-125.73" y="13.97" size="1.778" layer="97" rot="MR0">Question from Cooper:
 Is this SPI? I thought 
 you added SPI...?</text>
-<text x="-260.35" y="186.69" size="1.778" layer="91">NOTE TO ROUTER
+<text x="-260.35" y="186.69" size="1.778" layer="97">NOTE TO ROUTER
 Put the following on the
 silkscreen next to each pin:
 1: +
@@ -15283,8 +15432,8 @@ silkscreen next to each pin:
 <text x="-199.39" y="-181.61" size="6.4516" layer="91">SENSORS</text>
 <frame x1="152.4" y1="-43.18" x2="265.43" y2="220.98" columns="0" rows="0" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <text x="219.71" y="-38.1" size="6.4516" layer="91">PYRO</text>
-<text x="208.28" y="-179.07" size="3.556" layer="91">Top Level Schematic</text>
-<text x="228.6" y="87.63" size="1.778" layer="91">NOTE TO THE ROUTER
+<text x="208.28" y="-179.07" size="3.556" layer="97">Top Level Schematic</text>
+<text x="228.6" y="87.63" size="1.778" layer="97">NOTE TO THE ROUTER
 Put "x+" and "x–" on the
 silkscreen, where x means
 the firing chain number.</text>
