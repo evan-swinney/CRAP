@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11968,6 +11968,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-3.175" x2="-5.08" y2="3.175" width="0.127" layer="21"/>
 <text x="-5.08" y="3.81" size="1.27" layer="27">&gt;value</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="2POS_0.1">
 <pad name="1" x="-1.27" y="0" drill="0.8" shape="long" rot="R90"/>
@@ -11977,6 +11978,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="2.54" y1="-3.175" x2="-2.54" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-3.175" x2="-2.54" y2="3.175" width="0.127" layer="21"/>
 <text x="-2.54" y="3.81" size="1.27" layer="27">&gt;value</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15133,9 +15135,9 @@ Cooper Barry</text>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="J5" library="CRAP Parts" deviceset="4POS_SCREWTERM" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
+<part name="J5" library="CRAP Parts" deviceset="4POS_SCREWTERM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15192,8 +15194,8 @@ the firing chain number.</text>
 <moduleinst name="FIRING_CIRCUIT4" module="FIRING_CIRCUIT" x="185.42" y="-5.08" smashed="yes">
 <attribute name="NAME" x="185.42" y="-6.35" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="BREAKWIRE1" module="BREAKWIRE" x="-180.34" y="-138.43"/>
-<moduleinst name="BREAKWIRE2" module="BREAKWIRE" x="-180.34" y="-92.71"/>
+<moduleinst name="BREAKWIRE1" module="BREAKWIRE" x="-215.9" y="-156.21"/>
+<moduleinst name="BREAKWIRE2" module="BREAKWIRE" x="-215.9" y="-110.49"/>
 <moduleinst name="IMU1" module="IMU" x="-135.89" y="55.88"/>
 </moduleinsts>
 <instances>
@@ -15241,13 +15243,13 @@ the firing chain number.</text>
 <instance part="+3V11" gate="G$1" x="184.15" y="198.12"/>
 <instance part="ORD_PWR1" gate="1" x="186.69" y="198.12" rot="MR0"/>
 <instance part="J1" gate="G$1" x="-220.98" y="190.5"/>
-<instance part="GND12" gate="1" x="-180.34" y="-158.75"/>
-<instance part="+3V12" gate="G$1" x="-180.34" y="-118.11"/>
-<instance part="+3V13" gate="G$1" x="-180.34" y="-72.39"/>
-<instance part="GND13" gate="1" x="-180.34" y="-113.03"/>
-<instance part="J5" gate="G$1" x="-219.71" y="-114.3"/>
+<instance part="GND12" gate="1" x="-215.9" y="-176.53"/>
+<instance part="+3V12" gate="G$1" x="-215.9" y="-135.89"/>
+<instance part="+3V13" gate="G$1" x="-215.9" y="-90.17"/>
+<instance part="GND13" gate="1" x="-215.9" y="-130.81"/>
 <instance part="GND14" gate="1" x="-146.05" y="35.56"/>
 <instance part="+3V14" gate="G$1" x="-147.32" y="78.74"/>
+<instance part="J5" gate="G$1" x="-254" y="-129.54"/>
 </instances>
 <busses>
 </busses>
@@ -15415,7 +15417,7 @@ the firing chain number.</text>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <portref moduleinst="BREAKWIRE1" port="GND"/>
-<wire x1="-180.34" y1="-153.67" x2="-180.34" y2="-156.21" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="-171.45" x2="-215.9" y2="-173.99" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -15425,7 +15427,7 @@ the firing chain number.</text>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <portref moduleinst="BREAKWIRE2" port="GND"/>
-<wire x1="-180.34" y1="-107.95" x2="-180.34" y2="-110.49" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="-125.73" x2="-215.9" y2="-128.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -15510,7 +15512,7 @@ the firing chain number.</text>
 <segment>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <portref moduleinst="BREAKWIRE1" port="VCC"/>
-<wire x1="-180.34" y1="-123.19" x2="-180.34" y2="-120.65" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="-140.97" x2="-215.9" y2="-138.43" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
@@ -15525,7 +15527,7 @@ the firing chain number.</text>
 <segment>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <portref moduleinst="BREAKWIRE2" port="VCC"/>
-<wire x1="-180.34" y1="-74.93" x2="-180.34" y2="-77.47" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="-92.71" x2="-215.9" y2="-95.25" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_IN" class="0">
