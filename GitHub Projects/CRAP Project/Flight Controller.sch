@@ -14066,6 +14066,125 @@ TS-003</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="st-microelectronics">
+<description>&lt;b&gt;ST Microelectronics Devices&lt;/b&gt;&lt;p&gt;
+Microcontrollers,  I2C components, linear devices&lt;p&gt;
+http://www.st.com&lt;p&gt;
+&lt;i&gt;Include st-microelectronics-2.lbr, st-microelectronics-3.lbr.&lt;p&gt;&lt;/i&gt;
+
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TFLGA16L">
+<smd name="P11" x="1.225" y="0" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P12" x="1.225" y="0.5" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P13" x="1.225" y="1" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P10" x="1.225" y="-0.5" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P9" x="1.225" y="-1" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P1" x="-1.225" y="1" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P2" x="-1.225" y="0.5" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P3" x="-1.225" y="0" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P4" x="-1.225" y="-0.5" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P5" x="-1.225" y="-1" dx="0.45" dy="0.35" layer="1"/>
+<smd name="P7" x="0" y="-1.225" dx="0.45" dy="0.35" layer="1" rot="R90"/>
+<smd name="P8" x="0.5" y="-1.225" dx="0.45" dy="0.35" layer="1" rot="R90"/>
+<smd name="P6" x="-0.5" y="-1.225" dx="0.45" dy="0.35" layer="1" rot="R90"/>
+<smd name="P15" x="0" y="1.225" dx="0.45" dy="0.35" layer="1" rot="R90"/>
+<smd name="P14" x="0.5" y="1.225" dx="0.45" dy="0.35" layer="1" rot="R90"/>
+<smd name="P16" x="-0.5" y="1.225" dx="0.45" dy="0.35" layer="1" rot="R90"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<text x="-2" y="2.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-2" y="2" radius="0.282840625" width="0.127" layer="21"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1.6" y="1.3"/>
+<vertex x="-0.9" y="1.3"/>
+<vertex x="-0.9" y="-1.3"/>
+<vertex x="-1.5" y="-1.3"/>
+<vertex x="-1.6" y="-1.3"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.8" y="1.6"/>
+<vertex x="0.8" y="1.6"/>
+<vertex x="0.8" y="0.9"/>
+<vertex x="-0.8" y="0.9"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.9" y="1.3"/>
+<vertex x="1.5" y="1.3"/>
+<vertex x="1.6" y="1.3"/>
+<vertex x="1.6" y="-1.3"/>
+<vertex x="0.9" y="-1.3"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.8" y="-0.9"/>
+<vertex x="0.8" y="-0.9"/>
+<vertex x="0.8" y="-1.5"/>
+<vertex x="-0.8" y="-1.5"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="H3LIS100DL">
+<pin name="SCL/SPC" x="12.7" y="12.7" length="middle" function="clk" rot="R180"/>
+<pin name="SDA/SDI" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="SA0/SDO" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="CS" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="INT1" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="INT2" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="-7.62" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="NC@1" x="-25.4" y="0" length="middle"/>
+<pin name="NC@2" x="-25.4" y="-2.54" length="middle"/>
+<pin name="RES@1" x="-25.4" y="7.62" length="middle"/>
+<pin name="RES@2" x="-25.4" y="5.08" length="middle"/>
+<pin name="VDD_IO" x="-5.08" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND@1" x="-10.16" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="-7.62" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@3" x="-5.08" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@4" x="-2.54" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<wire x1="-20.32" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-10.16" x2="-20.32" y2="15.24" width="0.254" layer="94"/>
+<text x="-20.32" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HDLIS100DL" prefix="U">
+<gates>
+<gate name="G$1" symbol="H3LIS100DL" x="5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TFLGA16L">
+<connects>
+<connect gate="G$1" pin="CS" pad="P8"/>
+<connect gate="G$1" pin="GND@1" pad="P5"/>
+<connect gate="G$1" pin="GND@2" pad="P12"/>
+<connect gate="G$1" pin="GND@3" pad="P13"/>
+<connect gate="G$1" pin="GND@4" pad="P16"/>
+<connect gate="G$1" pin="INT1" pad="P11"/>
+<connect gate="G$1" pin="INT2" pad="P9"/>
+<connect gate="G$1" pin="NC@1" pad="P2"/>
+<connect gate="G$1" pin="NC@2" pad="P3"/>
+<connect gate="G$1" pin="RES@1" pad="P15"/>
+<connect gate="G$1" pin="RES@2" pad="P10"/>
+<connect gate="G$1" pin="SA0/SDO" pad="P7"/>
+<connect gate="G$1" pin="SCL/SPC" pad="P4"/>
+<connect gate="G$1" pin="SDA/SDI" pad="P6"/>
+<connect gate="G$1" pin="VDD" pad="P14"/>
+<connect gate="G$1" pin="VDD_IO" pad="P1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15547,10 +15666,10 @@ the same net.</text>
 <ports>
 <port name="VCC" side="top" coord="-8.89" direction="pwr"/>
 <port name="GND" side="bottom" coord="-8.89" direction="pwr"/>
-<port name="SDA" side="right" coord="-1.27" direction="io"/>
-<port name="SCL" side="right" coord="-5.08" direction="in"/>
-<port name="AD0" side="right" coord="6.35" direction="io"/>
-<port name="INT" side="right" coord="2.54" direction="io"/>
+<port name="SDA" side="right" coord="2.54" direction="io"/>
+<port name="SCL" side="right" coord="-2.54" direction="in"/>
+<port name="AD0" side="right" coord="-7.62" direction="io"/>
+<port name="INT" side="right" coord="7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -15715,6 +15834,167 @@ the same net.</text>
 </sheet>
 </sheets>
 </module>
+<module name="HIGH_G" prefix="" dx="30.48" dy="20.32">
+<ports>
+<port name="VCC" side="top" coord="0" direction="pwr"/>
+<port name="GND" side="bottom" coord="0" direction="pwr"/>
+<port name="SCL/SPC" side="right" coord="0" direction="in"/>
+<port name="SDA/SDI" side="right" coord="-2.54" direction="io"/>
+<port name="SA0/SDO" side="right" coord="-7.62" direction="io"/>
+<port name="CS" side="right" coord="-5.08" direction="in"/>
+<port name="INT1" side="right" coord="7.62" direction="out"/>
+<port name="INT2" side="right" coord="5.08" direction="out"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="U1" library="st-microelectronics" deviceset="HDLIS100DL" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+<text x="21.59" y="-13.97" size="1.778" layer="97">INT pins can be push-pull</text>
+<text x="72.39" y="-7.62" size="1.778" layer="97">CS needs to be
+0: SPI enables
+1: I2C bus</text>
+<text x="39.37" y="35.56" size="1.778" layer="97">Place C2 nearest pin 1 and C3 nearest
+pin 14 (or swap, I don't care). As long
+as the 0603, 0.1 uF caps are closest
+to the pin on the device.</text>
+</plain>
+<instances>
+<instance part="U1" gate="G$1" x="6.35" y="-2.54"/>
+<instance part="+3V1" gate="G$1" x="-1.27" y="50.8"/>
+<instance part="GND1" gate="1" x="-3.81" y="-27.94"/>
+<instance part="C1" gate="G$1" x="10.16" y="36.83"/>
+<instance part="C2" gate="G$1" x="19.05" y="36.83"/>
+<instance part="C3" gate="G$1" x="27.94" y="36.83"/>
+<instance part="GND2" gate="1" x="10.16" y="24.13"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="INT2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="INT2"/>
+<wire x1="19.05" y1="-5.08" x2="43.18" y2="-5.08" width="0.1524" layer="91"/>
+<label x="40.64" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INT1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="INT1"/>
+<wire x1="19.05" y1="-2.54" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
+<label x="40.64" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CS" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="CS"/>
+<wire x1="19.05" y1="2.54" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
+<label x="66.04" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SA0/SDO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SA0/SDO"/>
+<wire x1="19.05" y1="5.08" x2="68.58" y2="5.08" width="0.1524" layer="91"/>
+<label x="66.04" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDA/SDI" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SDA/SDI"/>
+<wire x1="19.05" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
+<label x="66.04" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL/SPC" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SCL/SPC"/>
+<wire x1="19.05" y1="10.16" x2="68.58" y2="10.16" width="0.1524" layer="91"/>
+<label x="66.04" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="-1.27" y1="48.26" x2="-1.27" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="-1.27" y1="41.91" x2="-1.27" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-1.27" y1="20.32" x2="-1.27" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-1.27" y1="20.32" x2="1.27" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDD_IO"/>
+<wire x1="1.27" y1="20.32" x2="1.27" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-1.27" y="20.32"/>
+<pinref part="U1" gate="G$1" pin="RES@1"/>
+<wire x1="-19.05" y1="5.08" x2="-24.13" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="5.08" x2="-24.13" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="20.32" x2="-1.27" y2="20.32" width="0.1524" layer="91"/>
+<label x="-12.7" y="20.32" size="1.778" layer="95"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="39.37" x2="10.16" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="41.91" x2="-1.27" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="41.91" x2="19.05" y2="41.91" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="19.05" y1="41.91" x2="19.05" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="41.91" x2="27.94" y2="41.91" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="41.91" x2="27.94" y2="39.37" width="0.1524" layer="91"/>
+<junction x="19.05" y="41.91"/>
+<junction x="10.16" y="41.91"/>
+<junction x="-1.27" y="41.91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RES@2"/>
+<wire x1="-19.05" y1="2.54" x2="-24.13" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="2.54" x2="-24.13" y2="-21.59" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="-21.59" x2="-3.81" y2="-21.59" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@1"/>
+<wire x1="-3.81" y1="-21.59" x2="-3.81" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-3.81" y1="-21.59" x2="-1.27" y2="-21.59" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@2"/>
+<wire x1="-1.27" y1="-21.59" x2="-1.27" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@3"/>
+<wire x1="1.27" y1="-17.78" x2="1.27" y2="-21.59" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="-21.59" x2="-1.27" y2="-21.59" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@4"/>
+<wire x1="3.81" y1="-17.78" x2="3.81" y2="-21.59" width="0.1524" layer="91"/>
+<wire x1="3.81" y1="-21.59" x2="1.27" y2="-21.59" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-3.81" y1="-21.59" x2="-3.81" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-3.81" y="-21.59"/>
+<junction x="-1.27" y="-21.59"/>
+<junction x="1.27" y="-21.59"/>
+<label x="-24.13" y="-21.59" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="31.75" x2="10.16" y2="29.21" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="29.21" x2="10.16" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="31.75" x2="19.05" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="29.21" x2="10.16" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="29.21" x2="27.94" y2="29.21" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="29.21" x2="27.94" y2="31.75" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<junction x="10.16" y="29.21"/>
+<junction x="19.05" y="29.21"/>
+</segment>
+</net>
+</nets>
+</sheet>
+</sheets>
+</module>
 </modules>
 <parts>
 <part name="U1" library="atmel" deviceset="ATSAMG55J19" device=""/>
@@ -15762,6 +16042,11 @@ the same net.</text>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="J5" library="CRAP Parts" deviceset="4POS_SCREWTERM" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15827,6 +16112,7 @@ Place the following text next to each pin
 <moduleinst name="BREAKWIRE2" module="BREAKWIRE" x="-184.15" y="-154.94"/>
 <moduleinst name="BREAKWIRE1" module="BREAKWIRE" x="-184.15" y="-109.22"/>
 <moduleinst name="IMU1" module="IMU" x="-135.89" y="55.88"/>
+<moduleinst name="HIGH_G1" module="HIGH_G" x="-231.14" y="54.61"/>
 </moduleinsts>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0"/>
@@ -15880,7 +16166,12 @@ Place the following text next to each pin
 <instance part="GND14" gate="1" x="-144.78" y="35.56"/>
 <instance part="+3V14" gate="G$1" x="-144.78" y="76.2"/>
 <instance part="J5" gate="G$1" x="-222.25" y="-130.81"/>
-<instance part="R1" gate="G$1" x="-109.22" y="69.85" rot="R90"/>
+<instance part="R1" gate="G$1" x="-111.76" y="40.64" rot="R90"/>
+<instance part="GND15" gate="1" x="-111.76" y="30.48"/>
+<instance part="GND16" gate="1" x="-231.14" y="34.29"/>
+<instance part="+3V15" gate="G$1" x="-231.14" y="74.93"/>
+<instance part="R2" gate="G$1" x="-208.28" y="39.37" rot="R90"/>
+<instance part="GND17" gate="1" x="-208.28" y="29.21"/>
 </instances>
 <busses>
 </busses>
@@ -16060,6 +16351,21 @@ Place the following text next to each pin
 <portref moduleinst="BREAKWIRE1" port="GND"/>
 <wire x1="-184.15" y1="-124.46" x2="-184.15" y2="-127" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND15" gate="1" pin="GND"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-111.76" y1="33.02" x2="-111.76" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-208.28" y1="34.29" x2="-208.28" y2="31.75" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<portref moduleinst="HIGH_G1" port="GND"/>
+<wire x1="-231.14" y1="39.37" x2="-231.14" y2="36.83" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -16154,6 +16460,11 @@ Place the following text next to each pin
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <portref moduleinst="BREAKWIRE1" port="VCC"/>
 <wire x1="-184.15" y1="-91.44" x2="-184.15" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V15" gate="G$1" pin="+3V3"/>
+<portref moduleinst="HIGH_G1" port="VCC"/>
+<wire x1="-231.14" y1="69.85" x2="-231.14" y2="72.39" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_IN" class="0">
@@ -16350,6 +16661,22 @@ Place the following text next to each pin
 <wire x1="-212.09" y1="-123.19" x2="-212.09" y2="-104.14" width="0.1524" layer="91"/>
 <portref moduleinst="BREAKWIRE1" port="BW+"/>
 <wire x1="-212.09" y1="-104.14" x2="-204.47" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-111.76" y1="45.72" x2="-111.76" y2="48.26" width="0.1524" layer="91"/>
+<portref moduleinst="IMU1" port="AD0"/>
+<wire x1="-111.76" y1="48.26" x2="-115.57" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<portref moduleinst="HIGH_G1" port="SA0/SDO"/>
+<wire x1="-210.82" y1="46.99" x2="-208.28" y2="46.99" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-208.28" y1="46.99" x2="-208.28" y2="44.45" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
