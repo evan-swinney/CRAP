@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15816,10 +15816,10 @@ Evan Swinney</text>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="Q1" library="transistor-fet" deviceset="IPD042P03L3G" device=""/>
 <part name="Q2" library="transistor-fet" deviceset="IPD042P03L3G" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R0603"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="2.2 u"/>
 <part name="L1" library="inductor-coilcraft" deviceset="B82462G4102M" device=""/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="470k">
 <attribute name="TOLERANCE" value="1%"/>
@@ -15859,7 +15859,7 @@ via the resistor.</text>
 <text x="78.74" y="15.24" size="1.778" layer="97">Place the 10uF, 0603
 as close to the chip
 as possible</text>
-<text x="-200.66" y="10.16" size="1.778" layer="97">Header connections are not
+<text x="-199.39" y="8.89" size="1.778" layer="97">Header connections are not
 inside this module on purpose</text>
 <text x="10.16" y="-43.18" size="1.778" layer="97">FB2 is indeed going to GND</text>
 <text x="-66.04" y="-35.56" size="1.778" layer="97">NOTE TO THE ROUTER
@@ -15872,8 +15872,8 @@ See figure 8 of the datasheet.</text>
 <text x="-17.78" y="-33.02" size="1.778" layer="97">VSEL can go straight to ground
 without a pulldown according
 to figure 8 of the datasheet.</text>
-<text x="-152.4" y="25.4" size="1.778" layer="97">Reverse current protection</text>
-<text x="-109.22" y="22.86" size="1.778" layer="97">RBF power on/off</text>
+<text x="-148.59" y="25.4" size="1.778" layer="97">Reverse current protection</text>
+<text x="-111.76" y="25.4" size="1.778" layer="97">RBF power on/off</text>
 <wire x1="-40.64" y1="-15.24" x2="-33.02" y2="0" width="0.1524" layer="97"/>
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-2.54" width="0.1524" layer="97"/>
 <wire x1="-33.02" y1="0" x2="-35.052" y2="-1.524" width="0.1524" layer="97"/>
@@ -15892,7 +15892,7 @@ to figure 8 of the datasheet.</text>
 </instance>
 <instance part="R1" gate="G$1" x="-114.3" y="5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="-115.57" y="8.6614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-110.998" y="1.27" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="-115.57" y="5.842" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C4" gate="G$1" x="-114.3" y="-17.78"/>
 <instance part="L1" gate="G$1" x="0" y="33.02" smashed="yes" rot="R90">
@@ -15901,7 +15901,7 @@ to figure 8 of the datasheet.</text>
 </instance>
 <instance part="R2" gate="G$1" x="-106.68" y="-12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="-105.41" y="-8.6614" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-109.982" y="-8.89" size="1.778" layer="96" rot="R270"/>
+<attribute name="VALUE" x="-105.41" y="-10.922" size="1.778" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="-25.4" y="-20.32"/>
 <instance part="R3" gate="G$1" x="43.18" y="5.08" smashed="yes" rot="R90">
@@ -16203,15 +16203,13 @@ to figure 8 of the datasheet.</text>
 </module>
 <module name="FIRING_CIRCUIT" prefix="" dx="30.48" dy="20.32">
 <ports>
-<port name="ORD_PWR" side="top" coord="0" direction="pwr"/>
 <port name="GND" side="bottom" coord="0" direction="pwr"/>
-<port name="3V3" side="top" coord="-2.54" direction="pwr"/>
 <port name="!CONT_EN" side="left" coord="6.35" direction="in"/>
-<port name="CONT_STAT" side="left" coord="3.81" direction="out"/>
 <port name="FIRE1" side="left" coord="-3.81" direction="in"/>
 <port name="FIRE2" side="left" coord="-6.35" direction="in"/>
-<port name="PYRO+" side="right" coord="3.81" direction="io"/>
-<port name="PYRO–" side="right" coord="-3.81" direction="io"/>
+<port name="PWR/PYRO+" side="right" coord="6.35" direction="io"/>
+<port name="CONT_STAT/PYRO–" side="right" coord="-3.81" direction="io"/>
+<port name="+3V3" side="top" coord="0" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -16238,11 +16236,11 @@ to figure 8 of the datasheet.</text>
 <text x="328.93" y="168.91" size="1.778" layer="97">Ordnance connections outside of
 the firing chain, so we can use
 more than a 2-terminal block.</text>
-<text x="170.18" y="177.8" size="1.778" layer="97">Power in after diode array
+<text x="168.91" y="173.99" size="1.778" layer="97">Power in after diode array
 from super capacitors</text>
-<text x="165.1" y="209.55" size="1.778" layer="97">!CONT_EN
+<text x="163.83" y="201.93" size="1.778" layer="97">!CONT_EN
 Continuity Enable command</text>
-<text x="170.18" y="156.21" size="1.778" layer="97">CONT_STAT
+<text x="168.91" y="161.29" size="1.778" layer="97">CONT_STAT
 Continuity Status</text>
 <text x="33.02" y="63.5" size="1.778" layer="97">DESCRIPTION OF MODULE PINS
 ~CONT_EN: Enable pin to trigger continuity
@@ -16254,17 +16252,10 @@ ORD_PWR: Firing chain power (from
 3V3: Power to run digital I/O
 FIRE1: Upper NFET firing command
 FIRE2: Lower NFET firing command</text>
-<text x="269.24" y="115.57" size="1.778" layer="97">ISSUE:
-I want to have two separate ports on the module
-for (CONT_STAT &amp; PYRO–) and (ORD_PWR &amp; 
-PRYO+), but I cannot have two names for a 
-net. How should this be worked around? I 
-don't want to use a 0 Ohm resistor. Make a
-small via that connects two nets?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="GND1" gate="1" x="224.79" y="118.11"/>
+<instance part="GND1" gate="1" x="224.79" y="107.95"/>
 <instance part="R1" gate="G$1" x="215.9" y="185.42" rot="R90"/>
 <instance part="R2" gate="G$1" x="213.36" y="118.11" rot="R90"/>
 <instance part="R3" gate="G$1" x="189.23" y="133.35" rot="R90"/>
@@ -16297,7 +16288,7 @@ small via that connects two nets?</text>
 <junction x="224.79" y="135.89"/>
 </segment>
 </net>
-<net name="PYRO–" class="0">
+<net name="CONT_STAT/PYRO–" class="0">
 <segment>
 <wire x1="224.79" y1="148.59" x2="224.79" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="224.79" y1="151.13" x2="224.79" y2="161.29" width="0.1524" layer="91"/>
@@ -16307,7 +16298,7 @@ small via that connects two nets?</text>
 <junction x="224.79" y="161.29"/>
 <pinref part="Q2" gate="G$1" pin="D1@1"/>
 <pinref part="Q2" gate="G$1" pin="D1@2"/>
-<wire x1="195.58" y1="161.29" x2="180.34" y2="161.29" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="161.29" x2="168.91" y2="161.29" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="148.59" x2="226.06" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="151.13" x2="224.79" y2="151.13" width="0.1524" layer="91"/>
 <junction x="224.79" y="151.13"/>
@@ -16323,7 +16314,7 @@ small via that connects two nets?</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="224.79" y1="123.19" x2="224.79" y2="120.65" width="0.1524" layer="91"/>
+<wire x1="224.79" y1="123.19" x2="224.79" y2="110.49" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="S2"/>
 </segment>
 <segment>
@@ -16342,12 +16333,12 @@ small via that connects two nets?</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="PYRO+" class="0">
+<net name="PWR/PYRO+" class="0">
 <segment>
 <wire x1="311.15" y1="173.99" x2="281.94" y2="173.99" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="281.94" y1="173.99" x2="215.9" y2="173.99" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="173.99" x2="180.34" y2="173.99" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="173.99" x2="168.91" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="180.34" x2="215.9" y2="173.99" width="0.1524" layer="91"/>
 <junction x="215.9" y="173.99"/>
 <label x="304.8" y="175.26" size="1.778" layer="95"/>
@@ -16386,9 +16377,9 @@ small via that connects two nets?</text>
 <wire x1="203.2" y1="218.44" x2="203.2" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="203.2" y1="213.36" x2="210.82" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="213.36" x2="180.34" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="213.36" x2="168.91" y2="213.36" width="0.1524" layer="91"/>
 <junction x="203.2" y="213.36"/>
-<label x="180.34" y="213.36" size="1.778" layer="95"/>
+<label x="168.91" y="213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -17126,9 +17117,8 @@ Cooper Barry</text>
 <ports>
 <port name="VCC" side="top" coord="0" direction="pwr"/>
 <port name="GND" side="bottom" coord="0" direction="pwr"/>
-<port name="BW_STAT" side="right" coord="-2.54" direction="out"/>
 <port name="BW+" side="left" coord="5.08" direction="io"/>
-<port name="BW–" side="left" coord="-5.08" direction="io"/>
+<port name="BW_STAT/BW–" side="left" coord="-5.08" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -17182,14 +17172,12 @@ the same net.</text>
 <pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="BW–" class="0">
+<net name="BW_STAT/BW–" class="0">
 <segment>
-<wire x1="177.8" y1="109.22" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
 <label x="223.52" y="109.22" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="109.22" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="104.14" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
-<junction x="193.04" y="109.22"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17564,17 +17552,8 @@ to the pin on the device.</text>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="CRAP Parts" deviceset="4POS_SCREWTERM" device=""/>
 <part name="J4" library="CRAP Parts" deviceset="4POS_SCREWTERM" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="ORD_PWR" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
-<part name="ORD_PWR3" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
-<part name="ORD_PWR4" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
-<part name="ORD_PWR5" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
-<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="ORD_PWR1" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
 <part name="J1" library="CRAP Parts" deviceset="2POS_SCREWTERM" device=""/>
@@ -17591,6 +17570,15 @@ to the pin on the device.</text>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
+<part name="ORD_PWR2" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="ORD_PWR3" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
+<part name="ORD_PWR4" library="supply1" deviceset="+12V" device="" value="ORD_PWR"/>
 </parts>
 <sheets>
 <sheet>
@@ -17607,9 +17595,6 @@ text next to each pin:
 3: S–
 4: EXC–</text>
 <text x="-165.1" y="114.3" size="1.778" layer="97">This is SPI and not I2C</text>
-<text x="-128.27" y="-6.35" size="1.778" layer="97" rot="MR0">Question from Cooper:
-Is this SPI? I thought 
-you added SPI...?</text>
 <text x="-260.35" y="186.69" size="1.778" layer="97">NOTE TO ROUTER
 Put the following on the
 silkscreen next to each pin:
@@ -17618,7 +17603,7 @@ silkscreen next to each pin:
 <frame x1="-271.78" y1="148.59" x2="-17.78" y2="224.79" columns="0" rows="0" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <text x="-143.51" y="161.29" size="6.4516" layer="91">POWER</text>
 <frame x1="-270.51" y1="-187.96" x2="-88.9" y2="134.62" columns="0" rows="0" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<text x="-167.64" y="-180.34" size="6.4516" layer="91">SENSORS</text>
+<text x="-128.27" y="-186.69" size="6.4516" layer="91">SENSORS</text>
 <frame x1="152.4" y1="-43.18" x2="265.43" y2="220.98" columns="0" rows="0" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <text x="219.71" y="-38.1" size="6.4516" layer="91">PYRO</text>
 <text x="208.28" y="-179.07" size="3.556" layer="97">Top Level Schematic</text>
@@ -17632,6 +17617,11 @@ Place the following text next to each pin
 2. 1–
 3. 2+
 4. 2–</text>
+<text x="-157.48" y="177.8" size="1.778" layer="91">Place the USB here. Positive goes to PWR_IN
+and negative to GND. Note, this does not use
+diode steering, so the battery cannot be 
+connected when powering through the USB.
+I don't care what you do with the data lines.</text>
 </plain>
 <moduleinsts>
 <moduleinst name="MS5611" module="MS5611" x="-184.15" y="-6.35" offset="200" rot="MR0"/>
@@ -17644,19 +17634,19 @@ Place the following text next to each pin
 <moduleinst name="FIRING_CIRCUIT1" module="FIRING_CIRCUIT" x="185.42" y="179.07" smashed="yes">
 <attribute name="NAME" x="185.42" y="177.8" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="FIRING_CIRCUIT2" module="FIRING_CIRCUIT" x="185.42" y="118.11" smashed="yes">
-<attribute name="NAME" x="185.42" y="116.84" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="BREAKWIRE2" module="BREAKWIRE" x="-184.15" y="-154.94"/>
+<moduleinst name="BREAKWIRE1" module="BREAKWIRE" x="-184.15" y="-100.33"/>
+<moduleinst name="IMU1" module="IMU" x="-135.89" y="55.88"/>
+<moduleinst name="HIGH_G1" module="HIGH_G" x="-231.14" y="54.61"/>
+<moduleinst name="FIRING_CIRCUIT2" module="FIRING_CIRCUIT" x="180.34" y="115.57" smashed="yes">
+<attribute name="NAME" x="180.34" y="114.3" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="FIRING_CIRCUIT3" module="FIRING_CIRCUIT" x="185.42" y="59.69" smashed="yes">
 <attribute name="NAME" x="185.42" y="58.42" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="FIRING_CIRCUIT4" module="FIRING_CIRCUIT" x="185.42" y="-3.81" smashed="yes">
-<attribute name="NAME" x="185.42" y="-5.08" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="FIRING_CIRCUIT4" module="FIRING_CIRCUIT" x="180.34" y="-6.35" smashed="yes">
+<attribute name="NAME" x="180.34" y="-7.62" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="BREAKWIRE2" module="BREAKWIRE" x="-184.15" y="-154.94"/>
-<moduleinst name="BREAKWIRE1" module="BREAKWIRE" x="-184.15" y="-109.22"/>
-<moduleinst name="IMU1" module="IMU" x="-135.89" y="55.88"/>
-<moduleinst name="HIGH_G1" module="HIGH_G" x="-231.14" y="54.61"/>
 </moduleinsts>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0"/>
@@ -17689,24 +17679,15 @@ Place the following text next to each pin
 <instance part="GND7" gate="1" x="-76.2" y="170.18"/>
 <instance part="J3" gate="G$1" x="233.68" y="147.32" rot="MR0"/>
 <instance part="J4" gate="G$1" x="233.68" y="26.67" rot="MR0"/>
-<instance part="GND8" gate="1" x="185.42" y="-24.13"/>
-<instance part="GND9" gate="1" x="185.42" y="39.37"/>
-<instance part="GND10" gate="1" x="185.42" y="97.79"/>
 <instance part="GND11" gate="1" x="185.42" y="158.75"/>
 <instance part="ORD_PWR" gate="1" x="-46.99" y="200.66"/>
-<instance part="ORD_PWR3" gate="1" x="185.42" y="138.43" rot="MR0"/>
-<instance part="ORD_PWR4" gate="1" x="185.42" y="80.01" rot="MR0"/>
-<instance part="ORD_PWR5" gate="1" x="185.42" y="16.51" rot="MR0"/>
-<instance part="+3V8" gate="G$1" x="182.88" y="80.01"/>
-<instance part="+3V9" gate="G$1" x="182.88" y="138.43"/>
-<instance part="+3V10" gate="G$1" x="182.88" y="16.51"/>
-<instance part="+3V11" gate="G$1" x="182.88" y="199.39"/>
-<instance part="ORD_PWR1" gate="1" x="185.42" y="199.39" rot="MR0"/>
+<instance part="+3V11" gate="G$1" x="185.42" y="199.39"/>
+<instance part="ORD_PWR1" gate="1" x="210.82" y="199.39" rot="MR0"/>
 <instance part="J1" gate="G$1" x="-220.98" y="193.04"/>
 <instance part="GND12" gate="1" x="-184.15" y="-175.26"/>
 <instance part="+3V12" gate="G$1" x="-184.15" y="-134.62"/>
-<instance part="+3V13" gate="G$1" x="-184.15" y="-88.9"/>
-<instance part="GND13" gate="1" x="-184.15" y="-129.54"/>
+<instance part="+3V13" gate="G$1" x="-184.15" y="-80.01"/>
+<instance part="GND13" gate="1" x="-184.15" y="-120.65"/>
 <instance part="GND14" gate="1" x="-144.78" y="35.56"/>
 <instance part="+3V14" gate="G$1" x="-144.78" y="76.2"/>
 <instance part="J5" gate="G$1" x="-222.25" y="-130.81"/>
@@ -17716,6 +17697,15 @@ Place the following text next to each pin
 <instance part="+3V15" gate="G$1" x="-231.14" y="74.93"/>
 <instance part="R2" gate="G$1" x="-208.28" y="39.37" rot="R90"/>
 <instance part="GND17" gate="1" x="-208.28" y="29.21"/>
+<instance part="GND8" gate="1" x="180.34" y="95.25"/>
+<instance part="+3V8" gate="G$1" x="180.34" y="135.89"/>
+<instance part="ORD_PWR2" gate="1" x="205.74" y="135.89" rot="MR0"/>
+<instance part="GND9" gate="1" x="185.42" y="39.37"/>
+<instance part="+3V9" gate="G$1" x="185.42" y="80.01"/>
+<instance part="ORD_PWR3" gate="1" x="210.82" y="80.01" rot="MR0"/>
+<instance part="GND10" gate="1" x="180.34" y="-26.67"/>
+<instance part="+3V10" gate="G$1" x="180.34" y="13.97"/>
+<instance part="ORD_PWR4" gate="1" x="205.74" y="13.97" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -17866,21 +17856,6 @@ Place the following text next to each pin
 <wire x1="185.42" y1="161.29" x2="185.42" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND10" gate="1" pin="GND"/>
-<portref moduleinst="FIRING_CIRCUIT2" port="GND"/>
-<wire x1="185.42" y1="100.33" x2="185.42" y2="102.87" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND9" gate="1" pin="GND"/>
-<portref moduleinst="FIRING_CIRCUIT3" port="GND"/>
-<wire x1="185.42" y1="41.91" x2="185.42" y2="44.45" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<portref moduleinst="FIRING_CIRCUIT4" port="GND"/>
-<wire x1="185.42" y1="-21.59" x2="185.42" y2="-19.05" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <portref moduleinst="BREAKWIRE2" port="GND"/>
 <wire x1="-184.15" y1="-170.18" x2="-184.15" y2="-172.72" width="0.1524" layer="91"/>
@@ -17893,7 +17868,7 @@ Place the following text next to each pin
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <portref moduleinst="BREAKWIRE1" port="GND"/>
-<wire x1="-184.15" y1="-124.46" x2="-184.15" y2="-127" width="0.1524" layer="91"/>
+<wire x1="-184.15" y1="-115.57" x2="-184.15" y2="-118.11" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
@@ -17909,6 +17884,21 @@ Place the following text next to each pin
 <pinref part="GND16" gate="1" pin="GND"/>
 <portref moduleinst="HIGH_G1" port="GND"/>
 <wire x1="-231.14" y1="39.37" x2="-231.14" y2="36.83" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<portref moduleinst="FIRING_CIRCUIT2" port="GND"/>
+<wire x1="180.34" y1="97.79" x2="180.34" y2="100.33" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<portref moduleinst="FIRING_CIRCUIT3" port="GND"/>
+<wire x1="185.42" y1="41.91" x2="185.42" y2="44.45" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<portref moduleinst="FIRING_CIRCUIT4" port="GND"/>
+<wire x1="180.34" y1="-24.13" x2="180.34" y2="-21.59" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -17972,23 +17962,8 @@ Place the following text next to each pin
 </segment>
 <segment>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
-<portref moduleinst="FIRING_CIRCUIT1" port="3V3"/>
-<wire x1="182.88" y1="196.85" x2="182.88" y2="194.31" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<portref moduleinst="FIRING_CIRCUIT2" port="3V3"/>
-<wire x1="182.88" y1="135.89" x2="182.88" y2="133.35" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<portref moduleinst="FIRING_CIRCUIT3" port="3V3"/>
-<wire x1="182.88" y1="77.47" x2="182.88" y2="74.93" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<portref moduleinst="FIRING_CIRCUIT4" port="3V3"/>
-<wire x1="182.88" y1="13.97" x2="182.88" y2="11.43" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="196.85" x2="185.42" y2="194.31" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT1" port="+3V3"/>
 </segment>
 <segment>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
@@ -18003,12 +17978,27 @@ Place the following text next to each pin
 <segment>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <portref moduleinst="BREAKWIRE1" port="VCC"/>
-<wire x1="-184.15" y1="-91.44" x2="-184.15" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-184.15" y1="-82.55" x2="-184.15" y2="-85.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
 <portref moduleinst="HIGH_G1" port="VCC"/>
 <wire x1="-231.14" y1="69.85" x2="-231.14" y2="72.39" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<wire x1="180.34" y1="133.35" x2="180.34" y2="130.81" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT2" port="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="185.42" y1="77.47" x2="185.42" y2="74.93" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT3" port="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V10" gate="G$1" pin="+3V3"/>
+<wire x1="180.34" y1="11.43" x2="180.34" y2="8.89" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT4" port="+3V3"/>
 </segment>
 </net>
 <net name="VCC_IN" class="0">
@@ -18079,24 +18069,42 @@ Place the following text next to each pin
 <wire x1="-46.99" y1="195.58" x2="-55.88" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<wire x1="205.74" y1="185.42" x2="210.82" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="185.42" x2="223.52" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="185.42" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="P1"/>
+<wire x1="223.52" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="185.42" x2="210.82" y2="196.85" width="0.1524" layer="91"/>
 <pinref part="ORD_PWR1" gate="1" pin="+12V"/>
-<portref moduleinst="FIRING_CIRCUIT1" port="ORD_PWR"/>
-<wire x1="185.42" y1="196.85" x2="185.42" y2="194.31" width="0.1524" layer="91"/>
+<junction x="210.82" y="185.42"/>
+<portref moduleinst="FIRING_CIRCUIT1" port="PWR/PYRO+"/>
 </segment>
 <segment>
+<wire x1="200.66" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="121.92" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="121.92" x2="205.74" y2="133.35" width="0.1524" layer="91"/>
+<pinref part="ORD_PWR2" gate="1" pin="+12V"/>
+<junction x="205.74" y="121.92"/>
+<portref moduleinst="FIRING_CIRCUIT2" port="PWR/PYRO+"/>
+</segment>
+<segment>
+<wire x1="205.74" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="66.04" x2="210.82" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="ORD_PWR3" gate="1" pin="+12V"/>
-<portref moduleinst="FIRING_CIRCUIT2" port="ORD_PWR"/>
-<wire x1="185.42" y1="135.89" x2="185.42" y2="133.35" width="0.1524" layer="91"/>
+<junction x="210.82" y="66.04"/>
+<portref moduleinst="FIRING_CIRCUIT3" port="PWR/PYRO+"/>
+<pinref part="J4" gate="G$1" pin="P1"/>
+<wire x1="228.6" y1="34.29" x2="223.52" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="34.29" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<wire x1="200.66" y1="0" x2="205.74" y2="0" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="0" x2="218.44" y2="0" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="0" x2="205.74" y2="11.43" width="0.1524" layer="91"/>
 <pinref part="ORD_PWR4" gate="1" pin="+12V"/>
-<portref moduleinst="FIRING_CIRCUIT3" port="ORD_PWR"/>
-<wire x1="185.42" y1="77.47" x2="185.42" y2="74.93" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ORD_PWR5" gate="1" pin="+12V"/>
-<portref moduleinst="FIRING_CIRCUIT4" port="ORD_PWR"/>
-<wire x1="185.42" y1="13.97" x2="185.42" y2="11.43" width="0.1524" layer="91"/>
+<junction x="205.74" y="0"/>
+<portref moduleinst="FIRING_CIRCUIT4" port="PWR/PYRO+"/>
 </segment>
 </net>
 <net name="FC4+" class="0">
@@ -18104,32 +18112,10 @@ Place the following text next to each pin
 <pinref part="J4" gate="G$1" pin="P3"/>
 <wire x1="228.6" y1="24.13" x2="218.44" y2="24.13" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="24.13" x2="218.44" y2="0" width="0.1524" layer="91"/>
-<portref moduleinst="FIRING_CIRCUIT4" port="PYRO+"/>
-<wire x1="218.44" y1="0" x2="205.74" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FC4-" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="P4"/>
-<wire x1="228.6" y1="19.05" x2="223.52" y2="19.05" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="19.05" x2="223.52" y2="-7.62" width="0.1524" layer="91"/>
-<portref moduleinst="FIRING_CIRCUIT4" port="PYRO–"/>
-<wire x1="223.52" y1="-7.62" x2="205.74" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FC3+" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="P1"/>
-<wire x1="228.6" y1="34.29" x2="223.52" y2="34.29" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="34.29" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
-<portref moduleinst="FIRING_CIRCUIT3" port="PYRO+"/>
-<wire x1="223.52" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FC3-" class="0">
 <segment>
-<portref moduleinst="FIRING_CIRCUIT3" port="PYRO–"/>
-<wire x1="205.74" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="55.88" x2="218.44" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="P2"/>
 <wire x1="228.6" y1="29.21" x2="218.44" y2="29.21" width="0.1524" layer="91"/>
@@ -18140,44 +18126,30 @@ Place the following text next to each pin
 <pinref part="J3" gate="G$1" pin="P3"/>
 <wire x1="228.6" y1="144.78" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="144.78" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
-<portref moduleinst="FIRING_CIRCUIT2" port="PYRO+"/>
-<wire x1="218.44" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FC2-" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="P4"/>
-<wire x1="228.6" y1="139.7" x2="223.52" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="139.7" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
-<portref moduleinst="FIRING_CIRCUIT2" port="PYRO–"/>
-<wire x1="223.52" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FC1+" class="0">
-<segment>
-<portref moduleinst="FIRING_CIRCUIT1" port="PYRO+"/>
-<wire x1="205.74" y1="182.88" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="182.88" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="P1"/>
-<wire x1="223.52" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FC1-" class="0">
 <segment>
-<portref moduleinst="FIRING_CIRCUIT1" port="PYRO–"/>
-<wire x1="205.74" y1="175.26" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="175.26" x2="210.82" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="175.26" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="175.26" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="P2"/>
 <wire x1="218.44" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT1" port="CONT_STAT/PYRO–"/>
+<wire x1="210.82" y1="175.26" x2="210.82" y2="153.67" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="153.67" x2="170.18" y2="153.67" width="0.1524" layer="91"/>
+<junction x="210.82" y="175.26"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<portref moduleinst="BREAKWIRE1" port="BW–"/>
-<wire x1="-204.47" y1="-114.3" x2="-207.01" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="-207.01" y1="-114.3" x2="-207.01" y2="-128.27" width="0.1524" layer="91"/>
+<wire x1="-204.47" y1="-105.41" x2="-207.01" y2="-105.41" width="0.1524" layer="91"/>
+<wire x1="-207.01" y1="-105.41" x2="-207.01" y2="-128.27" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="P2"/>
 <wire x1="-207.01" y1="-128.27" x2="-217.17" y2="-128.27" width="0.1524" layer="91"/>
+<portref moduleinst="BREAKWIRE1" port="BW_STAT/BW–"/>
+<wire x1="-207.01" y1="-128.27" x2="-165.1" y2="-128.27" width="0.1524" layer="91"/>
+<junction x="-207.01" y="-128.27"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -18191,20 +18163,23 @@ Place the following text next to each pin
 </net>
 <net name="N$12" class="0">
 <segment>
-<portref moduleinst="BREAKWIRE2" port="BW–"/>
-<wire x1="-204.47" y1="-160.02" x2="-212.09" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="-204.47" y1="-160.02" x2="-207.01" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="-207.01" y1="-160.02" x2="-212.09" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="-212.09" y1="-160.02" x2="-212.09" y2="-138.43" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="P4"/>
 <wire x1="-212.09" y1="-138.43" x2="-217.17" y2="-138.43" width="0.1524" layer="91"/>
+<wire x1="-207.01" y1="-160.02" x2="-207.01" y2="-179.07" width="0.1524" layer="91"/>
+<wire x1="-207.01" y1="-179.07" x2="-161.29" y2="-179.07" width="0.1524" layer="91"/>
+<junction x="-207.01" y="-160.02"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="P1"/>
 <wire x1="-217.17" y1="-123.19" x2="-212.09" y2="-123.19" width="0.1524" layer="91"/>
-<wire x1="-212.09" y1="-123.19" x2="-212.09" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="-212.09" y1="-123.19" x2="-212.09" y2="-95.25" width="0.1524" layer="91"/>
 <portref moduleinst="BREAKWIRE1" port="BW+"/>
-<wire x1="-212.09" y1="-104.14" x2="-204.47" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="-212.09" y1="-95.25" x2="-204.47" y2="-95.25" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -18221,6 +18196,42 @@ Place the following text next to each pin
 <wire x1="-210.82" y1="46.99" x2="-208.28" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-208.28" y1="46.99" x2="-208.28" y2="44.45" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FC1-1" class="0">
+<segment>
+<wire x1="200.66" y1="111.76" x2="204.47" y2="111.76" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT2" port="CONT_STAT/PYRO–"/>
+<pinref part="J3" gate="G$1" pin="P4"/>
+<wire x1="204.47" y1="111.76" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="139.7" x2="223.52" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="139.7" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="111.76" x2="204.47" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<junction x="204.47" y="111.76"/>
+</segment>
+</net>
+<net name="FC1-2" class="0">
+<segment>
+<wire x1="205.74" y1="55.88" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT3" port="CONT_STAT/PYRO–"/>
+<wire x1="210.82" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="55.88" x2="210.82" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="31.75" x2="170.18" y2="31.75" width="0.1524" layer="91"/>
+<junction x="210.82" y="55.88"/>
+</segment>
+</net>
+<net name="FC1-3" class="0">
+<segment>
+<wire x1="200.66" y1="-10.16" x2="204.47" y2="-10.16" width="0.1524" layer="91"/>
+<portref moduleinst="FIRING_CIRCUIT4" port="CONT_STAT/PYRO–"/>
+<pinref part="J4" gate="G$1" pin="P4"/>
+<wire x1="204.47" y1="-10.16" x2="223.52" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="19.05" x2="223.52" y2="19.05" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="19.05" x2="223.52" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="-10.16" x2="204.47" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="-30.48" x2="163.83" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="204.47" y="-10.16"/>
 </segment>
 </net>
 </nets>
