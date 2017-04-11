@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -20046,14 +20046,6 @@ I don't care what you do with the data lines.</text>
 <label x="223.52" y="24.13" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FC3-" class="0">
-<segment>
-<wire x1="218.44" y1="55.88" x2="218.44" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="P2"/>
-<wire x1="228.6" y1="29.21" x2="218.44" y2="29.21" width="0.1524" layer="91"/>
-<label x="223.52" y="29.21" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FC1-" class="0">
 <segment>
 <wire x1="205.74" y1="175.26" x2="210.82" y2="175.26" width="0.1524" layer="91"/>
@@ -20151,6 +20143,10 @@ I don't care what you do with the data lines.</text>
 <wire x1="210.82" y1="31.75" x2="165.1" y2="31.75" width="0.1524" layer="91"/>
 <junction x="210.82" y="55.88"/>
 <label x="156.21" y="31.75" size="1.778" layer="95" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="P2"/>
+<wire x1="218.44" y1="55.88" x2="218.44" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="29.21" x2="228.6" y2="29.21" width="0.1524" layer="91"/>
+<label x="223.52" y="29.21" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC1-3" class="0">
