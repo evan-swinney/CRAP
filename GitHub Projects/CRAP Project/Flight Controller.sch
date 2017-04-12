@@ -18044,7 +18044,7 @@ FIRE2: Lower NFET firing command</text>
 <parts>
 <part name="U1" library="linear-technology" deviceset="LTC3225" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="2.2u"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0402" value="1u"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0603" value="2.2k"/>
@@ -19521,6 +19521,25 @@ the real address is actually 0bxxxxxxx1.</text>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
+<part name="ON" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="LED5" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19568,6 +19587,7 @@ I don't care what you do with the data lines.</text>
 <text x="-165.1" y="-180.34" size="1.778" layer="97">BW2_Status</text>
 <text x="60.96" y="-6.35" size="1.778" layer="97">USART7 Module</text>
 <text x="60.96" y="31.75" size="1.778" layer="97">USART5 Module</text>
+<text x="-49.53" y="-186.69" size="6.4516" layer="91">LEDS</text>
 </plain>
 <moduleinsts>
 <moduleinst name="DCDC_REGULATOR" module="DCDC_REGULATOR" x="-180.34" y="190.5" offset="100"/>
@@ -19654,6 +19674,25 @@ I don't care what you do with the data lines.</text>
 <instance part="+3V9" gate="G$1" x="185.42" y="78.74"/>
 <instance part="+3V10" gate="G$1" x="180.34" y="134.62"/>
 <instance part="+3V11" gate="G$1" x="185.42" y="198.12"/>
+<instance part="ON" gate="G$1" x="-27.94" y="-147.32"/>
+<instance part="LED1" gate="G$1" x="-12.7" y="-147.32"/>
+<instance part="LED2" gate="G$1" x="2.54" y="-147.32"/>
+<instance part="LED3" gate="G$1" x="17.78" y="-147.32"/>
+<instance part="LED4" gate="G$1" x="33.02" y="-147.32"/>
+<instance part="LED5" gate="G$1" x="48.26" y="-147.32"/>
+<instance part="R3" gate="G$1" x="-27.94" y="-160.02" rot="R90"/>
+<instance part="R4" gate="G$1" x="-12.7" y="-160.02" rot="R90"/>
+<instance part="R5" gate="G$1" x="2.54" y="-160.02" rot="R90"/>
+<instance part="R6" gate="G$1" x="17.78" y="-160.02" rot="R90"/>
+<instance part="R7" gate="G$1" x="33.02" y="-160.02" rot="R90"/>
+<instance part="R8" gate="G$1" x="48.26" y="-160.02" rot="R90"/>
+<instance part="+3V17" gate="G$1" x="-27.94" y="-139.7"/>
+<instance part="GND19" gate="1" x="48.26" y="-170.18"/>
+<instance part="GND20" gate="1" x="33.02" y="-170.18"/>
+<instance part="GND21" gate="1" x="17.78" y="-170.18"/>
+<instance part="GND22" gate="1" x="2.54" y="-170.18"/>
+<instance part="GND23" gate="1" x="-12.7" y="-170.18"/>
+<instance part="GND24" gate="1" x="-27.94" y="-170.18"/>
 </instances>
 <busses>
 </busses>
@@ -19824,6 +19863,36 @@ I don't care what you do with the data lines.</text>
 <portref moduleinst="MS1" port="GND"/>
 <wire x1="-241.3" y1="-45.72" x2="-241.3" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="-27.94" y1="-165.1" x2="-27.94" y2="-167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="-12.7" y1="-165.1" x2="-12.7" y2="-167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="-167.64" x2="2.54" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="17.78" y1="-165.1" x2="17.78" y2="-167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="-167.64" x2="33.02" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="48.26" y1="-165.1" x2="48.26" y2="-167.64" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -19928,6 +19997,11 @@ I don't care what you do with the data lines.</text>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <portref moduleinst="GPS1" port="+3V3"/>
 <wire x1="-147.32" y1="-12.7" x2="-147.32" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ON" gate="G$1" pin="A"/>
+<wire x1="-27.94" y1="-144.78" x2="-27.94" y2="-142.24" width="0.1524" layer="91"/>
+<pinref part="+3V17" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="VCC_IN" class="0">
@@ -20270,6 +20344,91 @@ I don't care what you do with the data lines.</text>
 <pinref part="U1" gate="G$1" pin="PA28"/>
 <wire x1="43.18" y1="-7.62" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
 <label x="43.18" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<wire x1="-50.8" y1="-187.96" x2="76.2" y2="-187.96" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-187.96" x2="76.2" y2="-127" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-127" x2="-50.8" y2="-127" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-127" x2="-50.8" y2="-187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="-12.7" y1="-152.4" x2="-12.7" y2="-154.94" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="2.54" y1="-152.4" x2="2.54" y2="-154.94" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="-152.4" x2="17.78" y2="-154.94" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="33.02" y1="-152.4" x2="33.02" y2="-154.94" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="48.26" y1="-152.4" x2="48.26" y2="-154.94" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="ON" gate="G$1" pin="C"/>
+<wire x1="-27.94" y1="-152.4" x2="-27.94" y2="-154.94" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="UC_LED1" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="-12.7" y1="-144.78" x2="-12.7" y2="-142.24" width="0.1524" layer="91"/>
+<label x="-12.7" y="-142.24" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="UC_LED2" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="2.54" y1="-144.78" x2="2.54" y2="-142.24" width="0.1524" layer="91"/>
+<label x="2.54" y="-142.24" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="UC_LED3" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="17.78" y1="-144.78" x2="17.78" y2="-142.24" width="0.1524" layer="91"/>
+<label x="17.78" y="-142.24" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="UC_LED4" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="33.02" y1="-144.78" x2="33.02" y2="-142.24" width="0.1524" layer="91"/>
+<label x="33.02" y="-142.24" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="UC_LED5" class="0">
+<segment>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<wire x1="48.26" y1="-144.78" x2="48.26" y2="-142.24" width="0.1524" layer="91"/>
+<label x="48.26" y="-142.24" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
