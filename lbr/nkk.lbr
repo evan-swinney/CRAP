@@ -62,7 +62,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,75 +71,46 @@
 </layers>
 <library>
 <packages>
-<package name="SRP">
-<smd name="P$1" x="3" y="0" dx="3" dy="3.5" layer="1" rot="R180"/>
-<smd name="P$2" x="-3" y="0" dx="3" dy="3.5" layer="1" rot="R180"/>
-<wire x1="-4.5" y1="2" x2="-4.5" y2="4" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.127" layer="21"/>
-<wire x1="4.5" y1="4" x2="4.5" y2="2" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-2" x2="4.5" y2="-4" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-4" x2="-4.5" y2="-4" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-4" x2="-4.5" y2="-2" width="0.127" layer="21"/>
-<text x="-4" y="5" size="1.27" layer="27">&gt;value</text>
-<text x="-4" y="-6" size="1.27" layer="25">&gt;name</text>
-</package>
-<package name="1008">
-<smd name="P$1" x="1" y="0" dx="2" dy="0.8" layer="1" rot="R90"/>
-<smd name="P$2" x="-1" y="0" dx="2" dy="0.8" layer="1" rot="R90"/>
-<wire x1="-1.6" y1="1.2" x2="1.6" y2="1.2" width="0.127" layer="39"/>
-<wire x1="1.6" y1="1.2" x2="1.6" y2="-1.2" width="0.127" layer="39"/>
-<wire x1="1.6" y1="-1.2" x2="-1.6" y2="-1.2" width="0.127" layer="39"/>
-<wire x1="-1.6" y1="-1.2" x2="-1.6" y2="1.2" width="0.127" layer="39"/>
-<wire x1="-1.6" y1="1.2" x2="1.6" y2="1.2" width="0.127" layer="21"/>
-<wire x1="1.6" y1="1.2" x2="1.6" y2="-1.2" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-1.2" x2="-1.6" y2="-1.2" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-1.2" x2="-1.6" y2="1.2" width="0.127" layer="21"/>
-<text x="-2" y="2" size="1.27" layer="27">&gt;value</text>
-<text x="-2" y="-3" size="1.27" layer="25">&gt;name</text>
+<package name="SS14MDH2">
+<pad name="P$1" x="0" y="0" drill="0.65"/>
+<pad name="P$2" x="2.54" y="0" drill="0.65"/>
+<pad name="P$3" x="5.08" y="0" drill="0.65"/>
+<pad name="P$4" x="10.16" y="0" drill="0.65"/>
+<wire x1="-2.54" y1="-1.905" x2="12.7" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="12.7" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="1.905" x2="12.7" y2="-1.905" width="0.2032" layer="21"/>
+<text x="-2.54" y="2.54" size="1.27" layer="27">&gt;value</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="25">&gt;name</text>
 </package>
 </packages>
 <symbols>
-<symbol name="L-US">
-<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
-<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<symbol name="SP3T">
+<pin name="1" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="2" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="4" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="3" x="-15.24" y="0" length="middle"/>
+<wire x1="-10.16" y1="0" x2="0" y2="3.302" width="0.254" layer="94"/>
+<wire x1="0" y1="3.302" x2="-0.508" y2="2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="3.302" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="6.096" x2="3.81" y2="6.096" width="0.254" layer="94"/>
+<wire x1="3.81" y1="6.096" x2="3.81" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-6.35" x2="5.08" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SRP7050TA" prefix="L" uservalue="yes">
+<deviceset name="SS14MDH2" prefix="S" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="L-US" x="0" y="0"/>
+<gate name="G$1" symbol="SP3T" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SRP">
+<device name="" package="SS14MDH2">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SRP2512-2R2M" prefix="L" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="L-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1008" package="1008">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
