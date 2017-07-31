@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -21361,14 +21361,13 @@ FCI SFV4R-1STE1LF</description>
 <pad name="P$4" x="5.08" y="0" drill="1.1" diameter="1.9304"/>
 </package>
 <package name="RGBLED5050">
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-1.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-2.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
-<circle x="2.934" y="-2.688" radius="0.1414" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<circle x="-2.781" y="2.9" radius="0.1414" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.1" width="0.127" layer="21"/>
 <smd name="1" x="-2" y="1.7" dx="2" dy="1.1" layer="1"/>
 <smd name="2" x="-2" y="0" dx="2" dy="1.1" layer="1"/>
@@ -21378,6 +21377,16 @@ FCI SFV4R-1STE1LF</description>
 <smd name="6" x="2" y="1.7" dx="2" dy="1.1" layer="1"/>
 <text x="-1.7" y="2.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-4.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.5" y1="1.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<text x="-4.572" y="1.143" size="1.016" layer="48">A</text>
+<text x="-4.525" y="-0.619" size="1.016" layer="48">A</text>
+<text x="-4.462" y="-2.286" size="1.016" layer="48">A</text>
+<text x="3.556" y="1.143" size="1.016" layer="48">C</text>
+<text x="3.556" y="-0.508" size="1.016" layer="48">C</text>
+<text x="3.556" y="-2.286" size="1.016" layer="48">C</text>
+<text x="-0.381" y="1.27" size="1.016" layer="48">B</text>
+<text x="-0.381" y="-0.508" size="1.016" layer="48">R</text>
+<text x="-0.381" y="-2.159" size="1.016" layer="48">G</text>
 </package>
 <package name="SEWINGTAP_0.5">
 <pad name="TAP" x="0" y="0" drill="1.2" diameter="2.1844"/>
@@ -52729,10 +52738,10 @@ USART&lt;p&gt;
 <devices>
 <device name="5050" package="RGBLED5050">
 <connects>
-<connect gate="G$1" pin="BLUE_A" pad="3"/>
-<connect gate="G$1" pin="BLUE_C" pad="4"/>
-<connect gate="G$1" pin="GREEN_A" pad="1"/>
-<connect gate="G$1" pin="GREEN_C" pad="6"/>
+<connect gate="G$1" pin="BLUE_A" pad="1"/>
+<connect gate="G$1" pin="BLUE_C" pad="6"/>
+<connect gate="G$1" pin="GREEN_A" pad="3"/>
+<connect gate="G$1" pin="GREEN_C" pad="4"/>
 <connect gate="G$1" pin="RED_A" pad="2"/>
 <connect gate="G$1" pin="RED_C" pad="5"/>
 </connects>
