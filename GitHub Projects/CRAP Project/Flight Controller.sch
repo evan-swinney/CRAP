@@ -18837,12 +18837,12 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </part>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="10u"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="22u"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="22u"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C1206" value="22u"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C1206" value="22u"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="22u"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="22u"/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
